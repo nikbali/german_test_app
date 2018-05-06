@@ -18,6 +18,7 @@ import java.util.ArrayList;
 @WebServlet("/login")
 public class LoginController extends HttpServlet{
     private final static String USERS_FILE = "src/main/resurces/users.txt";
+    private JsonUser jsonUser = new JsonUser();
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -29,20 +30,18 @@ public class LoginController extends HttpServlet{
         else
         {
             try {
-                ArrayList<User> users = new JsonUser().getAll();
-                for(User user : users) System.out.println(user.getLogin());
 
                 String login = request.getParameter("login");
                 String password = request.getParameter("password");
-/*
-                if(read_user.getLogin().equals(login) && read_user.getPassword().equals(password))
-                {
-                    request.setAttribute("user", read_user);
-                    RequestDispatcher requestDispatcher = request.getRequestDispatcher("/jsp/success_login.jsp");
+
+                boolean success = jsonUser.login(login, password);
+                if(success) {
+                    User new_user = jsonUser.getUser(login);
+                    request.setAttribute("user", new_user);
+                    RequestDispatcher requestDispatcher = request.getRequestDispatcher("/jsp/succes_registration.jsp");
                     requestDispatcher.forward(request, response);
                 }
                 else throw new Exception();
-                */
             }
             catch (Exception ex)
             {

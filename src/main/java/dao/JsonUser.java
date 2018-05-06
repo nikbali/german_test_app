@@ -5,12 +5,9 @@ import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import model.User;
-
 import java.io.*;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.List;
-
 
 public class JsonUser implements UserDAO {
     private final static String USERS_FILE = "src/main/resurces/users.json";
@@ -62,17 +59,40 @@ public class JsonUser implements UserDAO {
 
     @Override
     public boolean checkUser(String login) {
-        return false;
+        if(this.hasFile())
+        {
+            ArrayList<User> users = this.getAll();
+            for(User user : users)
+            {
+                if(user.getLogin().equals(login))return true;
+            }
+            return false;
+        }
+        else return false;
     }
 
     @Override
     public boolean login(String login, String password) {
+        User user = this.getUser(login);
+        if(user != null)
+        {
+            if(user.getLogin().equals(login) && user.getPassword().equals(password)) return true;
+        }
         return false;
     }
 
     @Override
     public User getUser(String login) {
-        return null;
+        if(this.hasFile())
+        {
+            ArrayList<User> users = this.getAll();
+            for(User user : users)
+            {
+                if(user.getLogin().equals(login))return user;
+            }
+            return null;
+        }
+        else return null;
     }
 
     @Override
