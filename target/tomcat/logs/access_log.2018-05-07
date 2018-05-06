@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [07/May/2018:01:30:40 +0300] "GET / HTTP/1.1" 200 195 http-bio-8888-exec-1 1079
+0:0:0:0:0:0:0:1 - - [07/May/2018:01:30:42 +0300] "GET /registration HTTP/1.1" 200 573 http-bio-8888-exec-4 325
+0:0:0:0:0:0:0:1 - - [07/May/2018:01:31:01 +0300] "GET /registration?email=nikbali%40yandex.ru&first_name=nikita&last_name=balily&password=123qwe&click=Registration HTTP/1.1" 200 256 http-bio-8888-exec-6 196
+0:0:0:0:0:0:0:1 - - [07/May/2018:01:32:06 +0300] "GET / HTTP/1.1" 200 195 http-bio-8888-exec-8 4
+0:0:0:0:0:0:0:1 - - [07/May/2018:01:32:08 +0300] "GET /registration HTTP/1.1" 200 573 http-bio-8888-exec-9 8
+0:0:0:0:0:0:0:1 - - [07/May/2018:01:32:29 +0300] "GET /registration?email=alesha%40mail.ru&first_name=Alex&last_name=popov&password=qpwopore1&click=Registration HTTP/1.1" 200 250 http-bio-8888-exec-1 25
+0:0:0:0:0:0:0:1 - - [07/May/2018:01:32:57 +0300] "GET / HTTP/1.1" 200 195 http-bio-8888-exec-2 4
