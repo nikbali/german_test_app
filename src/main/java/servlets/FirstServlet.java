@@ -7,7 +7,7 @@ import com.google.gson.stream.JsonWriter;
 import dao.JsonUser;
 import model.User;
 
-import javax.jws.soap.SOAPBinding;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
@@ -18,9 +18,15 @@ import java.util.Enumeration;
 
 @WebServlet("/server")
 public class FirstServlet extends HttpServlet {
-    private final static String USERS_FILE = "src/main/resurces/users.json";
+    private final static String USERS_FILE = "/res/users.json";
+
     public void doGet(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse)
             throws IOException {
+        System.out.println(httpServletRequest.getContextPath() + "/ " );
+        ServletContext context = this.getServletContext();
+
+
+
 
         PrintWriter writer_html = new PrintWriter(new OutputStreamWriter(httpServletResponse.getOutputStream(), "Cp1251"));
         User user0 = new User("qwe@fsef", "niki", "bali", "pass");
@@ -28,21 +34,21 @@ public class FirstServlet extends HttpServlet {
         User user2 = new User("qwe@fsef2", "niki12", "bali222", "pass11");
         User user3 = new User("qwe@fsef3", "niki123", "bali22233", "pass111");
         Gson gson = new Gson();
-        JsonUser u1 = new JsonUser();
+        InputStream in_stream = getClass().getResourceAsStream("/users.json");
+        //JsonReader reader = new JsonReader(new InputStreamReader(in_stream));
+        int r  = in_stream.read();
+        while(r != -1)
+        {
+            System.out.println(r);
+            r = in_stream.read();
+        }
 
         ArrayList<User> users = new ArrayList<User>();
         users.add(user0);
         users.add(user1);
 
-        JsonWriter writer = new JsonWriter(new FileWriter(USERS_FILE));
-        Type type = new TypeToken<ArrayList<User>>(){}.getType();
-        gson.toJson(users, type, writer);
-        writer.flush();
-        writer.close();
 
-        JsonReader reader = new JsonReader(new FileReader(USERS_FILE));
-        ArrayList<User> test = new Gson().fromJson(reader, type);
-        for(User u : test) System.out.println(u.getLogin());
+
 
 
         writer_html.write("<!DOCTYPE html>\n" +

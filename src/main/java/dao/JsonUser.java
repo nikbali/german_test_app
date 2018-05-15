@@ -5,15 +5,24 @@ import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import model.User;
+
+import javax.servlet.ServletContext;
 import java.io.*;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 public class JsonUser implements UserDAO {
-    private final static String USERS_FILE = "src/main/resurces/users.json";
+    private final static String USERS_FILE = "users.json";
+    private  ServletContext context;
+
+    public JsonUser(ServletContext con)
+    {
+        context = con;
+    }
 
     @Override
     public boolean addUser(User user) {
+
         ArrayList<User> users = null;
         JsonWriter writer = null;
         Gson gson = new Gson();
@@ -24,7 +33,8 @@ public class JsonUser implements UserDAO {
                 users = this.getAll();
                 if(users == null)return false;
                 users.add(user);
-                writer = new JsonWriter(new FileWriter(USERS_FILE));
+              writer = new JsonWriter(new FileWriter(USERS_FILE));
+
                 gson.toJson(users, type, writer);
 
                 writer.flush();

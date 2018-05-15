@@ -1,15 +1,10 @@
 package model;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
-import java.io.Serializable;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class User  {
-    private final static String USERS_FILE = "src/main/resurces/users.txt";
     private String login;
     private String password;
     private String first_name;

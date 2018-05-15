@@ -1,4 +1,4 @@
-servlets\FirstServlet$1.class
+dao\DBConnect.class
 dao\JsonUser$2.class
 servlets\RegistrationController.class
 dao\JsonUser$1.class

@@ -17,8 +17,7 @@ import java.util.ArrayList;
 
 @WebServlet("/login")
 public class LoginController extends HttpServlet{
-    private final static String USERS_FILE = "src/main/resurces/users.txt";
-    private JsonUser jsonUser = new JsonUser();
+    private JsonUser jsonUser = new JsonUser(this.getServletContext());
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -47,7 +46,7 @@ public class LoginController extends HttpServlet{
             {
                 ex.printStackTrace();
                 response.getWriter().write("<p> Wrong Params. Try again... </p>" +
-                "<p><a href=\"login\">Login</a></p>");
+                "<p><a href=\"login\">Login again...</a></p>");
             }
 
         }

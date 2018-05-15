@@ -16,7 +16,7 @@ import java.io.ObjectOutputStream;
 
 @WebServlet("/registration")
 public class RegistrationController extends HttpServlet {
-    private final static String USERS_FILE = "src/main/resurces/users.txt";
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -34,9 +34,10 @@ public class RegistrationController extends HttpServlet {
 
             User new_user = new User(login, first_name, last_name, password);
             System.out.println(new_user.getLogin() + " создан");
-            JsonUser jsonUser = new JsonUser();
+            JsonUser jsonUser = new JsonUser(this.getServletContext());
             boolean success = jsonUser.addUser(new_user);
-            if(success) {
+            if(success)
+            {
                 request.setAttribute("user", new_user);
                 RequestDispatcher requestDispatcher = request.getRequestDispatcher("/jsp/succes_registration.jsp");
                 requestDispatcher.forward(request, response);
