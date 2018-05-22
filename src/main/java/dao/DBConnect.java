@@ -1,4 +1,6 @@
 package dao;
+
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -15,7 +17,7 @@ public class DBConnect {
         try
         {
             cons = DriverManager.getConnection(connectionUrl, userName, password);
-            System.out.println("Все гуд");
+
             //learning to work with database
             Statement statement = cons.createStatement();
             statement.executeUpdate("drop table User;");

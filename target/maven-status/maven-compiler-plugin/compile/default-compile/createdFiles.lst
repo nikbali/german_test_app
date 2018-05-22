@@ -1,10 +1,13 @@
 dao\DBConnect.class
 dao\JsonUser$2.class
-servlets\RegistrationController.class
 dao\JsonUser$1.class
 servlets\LoginController.class
-dao\UserDAO.class
-servlets\FirstServlet.class
 dao\JsonUser$3.class
+servlets\RegistrationController.class
+servlets\QuestionsController.class
+dao\UserDAO.class
+model\Question.class
+servlets\FirstServlet.class
+model\Answer.class
 model\User.class
 dao\JsonUser.class
