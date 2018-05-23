@@ -4,7 +4,10 @@ import model.User;
 
 import java.util.ArrayList;
 
-
+/**
+ * Интерфейс для работы с состоянием объектов типа User
+ * @author Nikita Balilyy
+ */
 public interface UserDAO {
     public boolean addUser(User user);
     public boolean checkUser(String login);
