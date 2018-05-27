@@ -8,15 +8,64 @@ public class Question {
     private int id;
     private String textOfQuestion;
     private String stringOfImageForQuestion;
-    private int idRightAnswer;
-    private ArrayList<Answer> answers;
-    private static int count = 0;
+    private ArrayList<Answer> answers = new ArrayList<Answer>();
 
-    public Question(int id, String textOfQuestion, String stringOfImageForQuestion) {
-        this.id = id;
+    public class Answer {
+        private int id;
+        private String text;
+        private boolean isRight;
+
+        public Answer(String text, boolean right) {
+            this.isRight = right;
+            this.text = text;
+        }
+        @Override
+        public String toString() {
+            return "Answer{" +
+                    " text='" + text + '\'' +
+                    " isRight= '" + isRight + '\''+
+                    '}';
+        }
+    }
+
+
+    public Question(String textOfQuestion, String stringOfImageForQuestion) {
+
         this.textOfQuestion = textOfQuestion;
         this.stringOfImageForQuestion = stringOfImageForQuestion;
 
+    }
+
+    public String getTextOfQuestion() {
+        return textOfQuestion;
+    }
+
+    public void setTextOfQuestion(String textOfQuestion) {
+        this.textOfQuestion = textOfQuestion;
+    }
+    public void setId(int id)
+    {
+        this.id = id;
+    }
+
+    public String getStringOfImageForQuestion() {
+        return stringOfImageForQuestion;
+    }
+
+    public void setStringOfImageForQuestion(String stringOfImageForQuestion) {
+        this.stringOfImageForQuestion = stringOfImageForQuestion;
+    }
+
+    public ArrayList<Answer> getAnswers() {
+        return answers;
+    }
+
+    public void addAnswer(Answer answer) {
+        this.answers.add(answer);
+    }
+
+    public void addAnswer(String text_answer, boolean right) {
+        this.answers.add(new Answer(text_answer, right));
     }
 
     @Override
@@ -24,24 +73,8 @@ public class Question {
         return "Question{ \n" +
                 "textOfQuestion='" + textOfQuestion + '\'' +
                 ",\nstringOfImageForQuestion='" + stringOfImageForQuestion + '\'' +
-                ",\nidRightAnswer=" + idRightAnswer +
                 ",\nanswers=" + answers +
                 '}';
     }
 
-    public static void main(String[] args) {
-        Answer answer0 = new Answer("Programming");
-        Answer answer1 = new Answer("Playing a game");
-        Answer answer2 = new Answer("Sleeping");
-        Answer answer3 = new Answer("Sleeping");
-        ArrayList<Answer> arr = new ArrayList<Answer> ();
-        arr.add(answer0);
-        arr.add(answer1);
-        arr.add(answer2);
-        arr.add(answer3);
-       // Question question = new Question("What is Nikita doing?" , null,arr );
-        Gson gson = new Gson();
-       // String stringJson = gson.toJson(question);
-        //System.out.println(stringJson);
-    }
 }

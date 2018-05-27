@@ -1,7 +1,7 @@
 package servlets;
 
 import com.google.gson.Gson;
-import model.Answer;
+
 import model.Question;
 
 import javax.servlet.annotation.WebServlet;
@@ -18,6 +18,7 @@ public class QuestionsController extends HttpServlet {
 
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException
     {
+        /*
         Answer answer0 = new Answer("Programming");
         Answer answer1 = new Answer("Playing a game");
         Answer answer2 = new Answer("Sleeping");
@@ -27,7 +28,8 @@ public class QuestionsController extends HttpServlet {
         arr.add(answer1);
         arr.add(answer2);
         arr.add(answer3);
-        Question question = new Question(1,"What is Nikita doing?" , null );
+        */
+        Question question = new Question("What is Nikita doing?" , "d.png" );
         Gson gson = new Gson();
         String stringJson = gson.toJson(question);
 

@@ -1,9 +1,9 @@
 package dao;
 
-import model.Answer;
 import model.Question;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 
 /**
  * Реализация паттерна Factory Method для Data Access Object
@@ -11,12 +11,10 @@ import java.sql.Connection;
  */
 public interface DAOFactory {
     /** Получаем instansce подключения к БД*/
-    Connection getConnection();
+    Connection getConnection() throws SQLException;
 
-    /** Возвращают DAO объекты для Question и Answer*/
-    GenericDAO<Question> getQuestionDAO(Connection connect);
-    GenericDAO<Answer> getAnswerDAO(Connection connect);
-
+    /** Возвращают DAO объекты для Question*/
+    GenericDAO<Question> getQuestionDAO();
     /**Возвращают DAO объекты для User */
-    UserDAO getUserDAO(Connection connect);
+    UserDAO getUserDAO();
 }
