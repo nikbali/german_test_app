@@ -6,9 +6,13 @@ import model.Question;
 import org.junit.*;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
-import static org.junit.Assert.*;
-
+/**
+ * Этот класс сделал чисто для себя, чтобы методы тестировать,
+ * так что не надо выебываться на меня что тесты написаны как у обезьяны
+ */
 
 public class MySqlQuestionDaoTest {
 
@@ -42,6 +46,8 @@ public class MySqlQuestionDaoTest {
 
     @Test
     public void getAll() throws Exception {
+        List<Question> questions = question_dao.getAll();
+        System.out.println(questions);
     }
 
 }

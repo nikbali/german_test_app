@@ -92,13 +92,23 @@ public class MySqlQuestionDao implements GenericDAO<Question> {
     @Override
     public List<Question> getAll() throws SQLException {
         String sql = "SELECT * FROM Question;";
+        String sql_answers = "SELECT * FROM Answer WHERE question_id = ?;";
         PreparedStatement stm = connection.prepareStatement(sql);
         ResultSet rs = stm.executeQuery();
         List<Question> list = new ArrayList<Question>();
         while (rs.next()) {
-            Question g = new Question(rs.getString("text"),rs.getString("image_path"));
-            g.setId(rs.getInt("id"));
-            list.add(g);
+            Question question = new Question(rs.getString("text"),rs.getString("image_path"));
+            int id = rs.getInt("id");
+            question.setId(id);
+            PreparedStatement stm2 = connection.prepareStatement(sql_answers);
+            stm2.setInt(1, id);
+            ResultSet resultSetAnswer = stm2.executeQuery();
+            while (resultSetAnswer.next())
+            {
+                question.addAnswer(resultSetAnswer.getString("text"), resultSetAnswer.getBoolean("right_flag"));
+            }
+            stm2.close();
+            list.add(question);
         }
         stm.close();
         return list;

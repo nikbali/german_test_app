@@ -96,7 +96,8 @@ public class Question {
     @Override
     public String toString() {
         return "Question{ \n" +
-                "textOfQuestion='" + textOfQuestion + '\'' +
+                "id='" + (id==0?"Noun":id) + '\'' +
+                ",\ntextOfQuestion='" + textOfQuestion + '\'' +
                 ",\nstringOfImageForQuestion='" + stringOfImageForQuestion + '\'' +
                 ",\nanswers=" + answers +
                 '}';
