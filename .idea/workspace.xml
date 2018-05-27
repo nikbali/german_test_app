@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b9043704-3e4c-4ae9-b56a-f8e5216a4f67" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/GenericDAO.java" afterPath="$PROJECT_DIR$/src/main/java/dao/GenericDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/MySqlDaoFactory.java" afterPath="$PROJECT_DIR$/src/main/java/dao/MySqlDaoFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/MySqlQuestionDao.java" afterPath="$PROJECT_DIR$/src/main/java/dao/MySqlQuestionDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/QuestionsController.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/QuestionsController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/MySqlQuestionDaoTest.java" afterPath="$PROJECT_DIR$/src/main/java/test/MySqlQuestionDaoTest.java" />
     </list>
@@ -20,31 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="19" column="69" lean-forward="false" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FirstServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/FirstServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="22" column="101" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="101" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionsController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QuestionsController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/servlets/QuestionsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+            <state relative-caret-position="496">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,8 +33,8 @@
       <file leaf-file-name="MySqlQuestionDaoTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/test/MySqlQuestionDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="38" />
+            <state relative-caret-position="289">
+              <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#create#0;class#MySqlQuestionDaoTest#0" expanded="false" />
@@ -64,6 +42,21 @@
                 <element signature="method#getByPK#0;class#MySqlQuestionDaoTest#0" expanded="false" />
                 <element signature="method#getAll#0;class#MySqlQuestionDaoTest#0" expanded="false" />
                 <element signature="method#rollBack#0;class#MySqlQuestionDaoTest#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MySqlDaoFactory.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/MySqlDaoFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="18" column="133" lean-forward="false" selection-start-line="18" selection-start-column="133" selection-end-line="18" selection-end-column="133" />
+              <folding>
+                <element signature="method#getConnection#0;class#MySqlDaoFactory#0" expanded="false" />
+                <element signature="e#1197#1198#0" expanded="true" />
+                <element signature="e#1246#1247#0" expanded="true" />
+                <element signature="method#getUserDAO#0;class#MySqlDaoFactory#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -118,12 +111,12 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/model/Answer.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/DAOFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/MySqlDaoFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Question.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test/MySqlQuestionDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/GenericDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/MySqlQuestionDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test/MySqlQuestionDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/QuestionsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/MySqlDaoFactory.java" />
       </list>
     </option>
   </component>
@@ -213,6 +206,13 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mywebproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mywebproject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -496,10 +496,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.delete" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.getAll" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.create" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.getByPK" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.getByPK" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.delete" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.getAll" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.create" />
         <item index="4" class="java.lang.String" itemvalue="Application.QuestionDaoImplements" />
       </list>
     </recent_temporary>
@@ -564,25 +564,17 @@
       <option name="project" value="LOCAL" />
       <updated>1527422338869</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Сделал delete() метод">
+      <created>1527434980022</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1527434980022</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MySqlQuestionDaoTest_delete - 2018.05.27 at 17h 29m 27s.xml">
-      <configuration name="MySqlQuestionDaoTest.delete" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MySqlQuestionDaoTest_delete - 2018.05.27 at 17h 31m 45s.xml">
-      <configuration name="MySqlQuestionDaoTest.delete" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MySqlQuestionDaoTest_delete - 2018.05.27 at 17h 32m 52s.xml">
-      <configuration name="MySqlQuestionDaoTest.delete" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MySqlQuestionDaoTest_delete - 2018.05.27 at 17h 35m 05s.xml">
-      <configuration name="MySqlQuestionDaoTest.delete" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MySqlQuestionDaoTest_delete - 2018.05.27 at 17h 37m 00s.xml">
-      <configuration name="MySqlQuestionDaoTest.delete" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MySqlQuestionDaoTest_delete - 2018.05.27 at 17h 39m 01s.xml">
       <configuration name="MySqlQuestionDaoTest.delete" configurationId="JUnit" />
     </history-entry>
@@ -597,6 +589,21 @@
     </history-entry>
     <history-entry file="MySqlQuestionDaoTest_delete - 2018.05.27 at 17h 42m 58s.xml">
       <configuration name="MySqlQuestionDaoTest.delete" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MySqlQuestionDaoTest_getByPK - 2018.05.27 at 18h 39m 12s.xml">
+      <configuration name="MySqlQuestionDaoTest.getByPK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MySqlQuestionDaoTest_getByPK - 2018.05.27 at 18h 40m 07s.xml">
+      <configuration name="MySqlQuestionDaoTest.getByPK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MySqlQuestionDaoTest_getByPK - 2018.05.27 at 18h 41m 18s.xml">
+      <configuration name="MySqlQuestionDaoTest.getByPK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MySqlQuestionDaoTest_getByPK - 2018.05.27 at 18h 42m 08s.xml">
+      <configuration name="MySqlQuestionDaoTest.getByPK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MySqlQuestionDaoTest_getByPK - 2018.05.27 at 19h 14m 12s.xml">
+      <configuration name="MySqlQuestionDaoTest.getByPK" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -621,7 +628,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11856474" sideWeight="0.50647247" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28236246" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29173166" sideWeight="0.4935275" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06864274" sideWeight="0.4935275" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -632,7 +639,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39937598" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51170045" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -708,11 +715,26 @@
     <MESSAGE value="переделал модоль данных, теперь Answer это внутренний класс в Question, также начал делать операции Create, Delete, Update, getAll для DAO" />
     <MESSAGE value="Сделал Create метод" />
     <MESSAGE value="Сделал getAll() метод" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделал getAll() метод" />
+    <MESSAGE value="Сделал delete() метод" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделал delete() метод" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/servlets/QuestionsController.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/servlets/QuestionsController.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1020,7 +1042,7 @@
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1062,17 +1084,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/MySqlDaoFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/FirstServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#MySqlDaoFactory#0;class#MySqlDaoFactory#0" expanded="false" />
-            <element signature="method#getInstance#0;class#MySqlDaoFactory#0" expanded="false" />
-            <element signature="method#getConnection#0;class#MySqlDaoFactory#0" expanded="false" />
-            <element signature="method#getUserDAO#0;class#MySqlDaoFactory#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="-221">
+          <caret line="22" column="101" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="101" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1084,18 +1100,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/FirstServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/QuestionsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="22" column="101" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="101" />
-          <folding />
+        <state relative-caret-position="496">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/test/MySqlQuestionDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="38" />
+        <state relative-caret-position="289">
+          <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#create#0;class#MySqlQuestionDaoTest#0" expanded="false" />
@@ -1107,12 +1125,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/QuestionsController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/MySqlDaoFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+        <state relative-caret-position="238">
+          <caret line="18" column="133" lean-forward="false" selection-start-line="18" selection-start-column="133" selection-end-line="18" selection-end-column="133" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#getConnection#0;class#MySqlDaoFactory#0" expanded="false" />
+            <element signature="e#1197#1198#0" expanded="true" />
+            <element signature="e#1246#1247#0" expanded="true" />
+            <element signature="method#getUserDAO#0;class#MySqlDaoFactory#0" expanded="false" />
           </folding>
         </state>
       </provider>

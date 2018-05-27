@@ -47,7 +47,7 @@ public class MySqlQuestionDaoTest {
     }
     @Test
     public void getByPK() throws Exception {
-        System.out.println(question_dao.getByPK(1));
+        System.out.println(question_dao.getByPK(4));
     }
     @Test
     public void getAll() throws Exception {
