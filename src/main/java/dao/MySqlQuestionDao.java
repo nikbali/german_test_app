@@ -19,27 +19,38 @@ public class MySqlQuestionDao implements GenericDAO<Question> {
 
     @Override
     public int create(Question question) {
-        String sql_answer_create = "INSERT into Answer() VALUES(?,?,?,?,?,?)";
-        String sql = "INSERT into Question(text, image_path) value(?,?)";
+        String sql_answer_create = "INSERT into Answer(text, question_id, right_flag) VALUES(?,?,?)";
+        String sql_create_question = "INSERT into Question(text, image_path) value(?,?)";
+        String query_last = "SELECT * FROM Question \n" +
+                "ORDER BY id desc limit 1;";
         int id = -1;
         PreparedStatement ps;
         try {
-            ps = connection.prepareStatement(sql);
+            ps = connection.prepareStatement(sql_create_question);
             ps.setString(1, question.getTextOfQuestion());
             ps.setString(2, question.getStringOfImageForQuestion());
             ps.executeUpdate();
-
+            PreparedStatement stm2 = connection.prepareStatement(query_last);
+            ResultSet rs = stm2.executeQuery();
+            rs.next();
+            id = rs.getInt("id");
+            stm2.close();
             if(question.getAnswers().size() != 0)
             {
-                PreparedStatement stm2 = connection.prepareStatement("SELECT * FROM Question WHERE id = ?;");
+                PreparedStatement stm3 = connection.prepareStatement(sql_answer_create);
+                for(Question.Answer answer : question.getAnswers())
+                {
+                    stm3.setString(1, answer.getText());
+                    stm3.setInt(2, id);
+                    stm3.setBoolean(3, answer.isRight());
+                    stm3.executeUpdate();
+                }
+                stm3.close();
             }
-
-
             ps.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
         return id;
     }
 

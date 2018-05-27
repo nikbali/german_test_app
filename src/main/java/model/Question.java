@@ -19,6 +19,31 @@ public class Question {
             this.isRight = right;
             this.text = text;
         }
+
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public String getText() {
+            return text;
+        }
+
+        public void setText(String text) {
+            this.text = text;
+        }
+
+        public boolean isRight() {
+            return isRight;
+        }
+
+        public void setRight(boolean right) {
+            isRight = right;
+        }
+
         @Override
         public String toString() {
             return "Answer{" +
