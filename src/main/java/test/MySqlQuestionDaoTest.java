@@ -1,13 +1,15 @@
 package test;
-import dao.DAOFactory;
+
 import dao.GenericDAO;
 import dao.MySqlDaoFactory;
 import model.Question;
 import org.junit.*;
-
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Этот класс сделал чисто для себя, чтобы методы тестировать,
@@ -19,13 +21,12 @@ public class MySqlQuestionDaoTest {
     MySqlDaoFactory dao;
     GenericDAO<Question> question_dao;
     static int num;
+
     @Before
-    public void gen() throws SQLException
-    {
+    public void gen() throws SQLException {
          dao = MySqlDaoFactory.getInstance();
          question_dao = dao.getQuestionDAO();
-         num++;
-
+         dao.getConnection().setAutoCommit(false);
     }
     @Test
     public void create() throws Exception {
@@ -38,16 +39,24 @@ public class MySqlQuestionDaoTest {
         System.out.println("Создан вопрос с Id: " + question_dao.create(test_question));
 
     }
+    @Test
+    public  void delete() throws Exception {
+        assertEquals(true, question_dao.delete(8));
+        assertEquals(false, question_dao.delete(766));
 
+    }
     @Test
     public void getByPK() throws Exception {
         System.out.println(question_dao.getByPK(1));
     }
-
     @Test
     public void getAll() throws Exception {
         List<Question> questions = question_dao.getAll();
         System.out.println(questions);
+    }
+    @After
+    public void rollBack() throws Exception {
+        dao.getConnection().rollback();
     }
 
 }

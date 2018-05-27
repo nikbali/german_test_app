@@ -18,14 +18,14 @@ public class MySqlQuestionDao implements GenericDAO<Question> {
     }
 
     @Override
-    public int create(Question question) {
+    public int create(Question question) throws SQLException {
         String sql_answer_create = "INSERT into Answer(text, question_id, right_flag) VALUES(?,?,?)";
         String sql_create_question = "INSERT into Question(text, image_path) value(?,?)";
         String query_last = "SELECT * FROM Question \n" +
                 "ORDER BY id desc limit 1;";
         int id = -1;
         PreparedStatement ps;
-        try {
+
             ps = connection.prepareStatement(sql_create_question);
             ps.setString(1, question.getTextOfQuestion());
             ps.setString(2, question.getStringOfImageForQuestion());
@@ -48,9 +48,7 @@ public class MySqlQuestionDao implements GenericDAO<Question> {
                 stm3.close();
             }
             ps.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
         return id;
     }
 
@@ -78,24 +76,28 @@ public class MySqlQuestionDao implements GenericDAO<Question> {
     }
 
     @Override
-    public void update(Question object) {
-
+    public void update(Question object) throws SQLException{
+        //TODO пока реализацию этого метода отложим, требуется уточнение (какие поля обнавлять нужно будет и т.д)
     }
 
     @Override
-    public void delete(Question question) {
-
+    public boolean delete(int pk) throws SQLException {
+        String sql_delete_question = " DELETE FROM Question\n" +
+                "WHERE id = ?;";
+            PreparedStatement ps = connection.prepareStatement(sql_delete_question);
+            ps.setInt(1, pk);
+            int cnt = ps.executeUpdate();
+            ps.close();
+            return (cnt>0?true:false);
     }
 
-
-
     @Override
-    public List<Question> getAll() throws SQLException {
+    public ArrayList<Question> getAll() throws SQLException {
         String sql = "SELECT * FROM Question;";
         String sql_answers = "SELECT * FROM Answer WHERE question_id = ?;";
         PreparedStatement stm = connection.prepareStatement(sql);
         ResultSet rs = stm.executeQuery();
-        List<Question> list = new ArrayList<Question>();
+        ArrayList<Question> list = new ArrayList<Question>();
         while (rs.next()) {
             Question question = new Question(rs.getString("text"),rs.getString("image_path"));
             int id = rs.getInt("id");

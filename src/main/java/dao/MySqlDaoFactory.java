@@ -43,8 +43,6 @@ public class MySqlDaoFactory implements DAOFactory {
         return new MySqlQuestionDao(cons);
     }
 
-
-
     @Override
     public UserDAO getUserDAO() {
         //TODO написать реализацию
