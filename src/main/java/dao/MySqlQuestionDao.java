@@ -107,7 +107,7 @@ public class MySqlQuestionDao implements GenericDAO<Question> {
             ResultSet resultSetAnswer = stm2.executeQuery();
             while (resultSetAnswer.next())
             {
-                question.addAnswer(resultSetAnswer.getString("text"), resultSetAnswer.getBoolean("right_flag"));
+                question.addAnswer(resultSetAnswer.getInt("id"), resultSetAnswer.getString("text"), resultSetAnswer.getBoolean("right_flag"));
             }
             stm2.close();
             list.add(question);

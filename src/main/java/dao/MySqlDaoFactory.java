@@ -20,11 +20,12 @@ public class MySqlDaoFactory implements DAOFactory {
     private Connection cons;
     private static MySqlDaoFactory instance;
 
-    private MySqlDaoFactory() throws SQLException
+    private MySqlDaoFactory() throws SQLException, ClassNotFoundException
     {
+        Class.forName("com.mysql.jdbc.Driver");
         cons = DriverManager.getConnection(connectionUrl, userName, password);
     }
-    public static MySqlDaoFactory getInstance() throws SQLException
+    public static MySqlDaoFactory getInstance() throws SQLException, ClassNotFoundException
     {
         if(instance == null)
         {

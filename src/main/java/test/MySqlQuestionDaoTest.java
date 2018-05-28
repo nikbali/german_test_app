@@ -23,18 +23,18 @@ public class MySqlQuestionDaoTest {
     static int num;
 
     @Before
-    public void gen() throws SQLException {
+    public void gen() throws Exception {
          dao = MySqlDaoFactory.getInstance();
          question_dao = dao.getQuestionDAO();
          dao.getConnection().setAutoCommit(false);
     }
     @Test
     public void create() throws Exception {
-        Question test_question = new Question("Test"+num, "Image"+num+".png" );
-       test_question.addAnswer("ans"+ (++num) , false);
-        test_question.addAnswer("ans"+ (++num) , true);
-        test_question.addAnswer("ans"+ (++num) , true);
-        test_question.addAnswer("ans"+ (++num) , false);
+        Question test_question = new Question("Auf welcher Straße steht der Reichstag?", "Street.png" );
+        test_question.addAnswer("Scheidemannstraße 2" , true);
+        test_question.addAnswer("Monckebergstraße 33" , false);
+        test_question.addAnswer("Karl Marx Straße 3" , false);
+        test_question.addAnswer("Wasserwerkstraße 8" , false);
 
         System.out.println("Создан вопрос с Id: " + question_dao.create(test_question));
 
@@ -56,7 +56,7 @@ public class MySqlQuestionDaoTest {
     }
     @After
     public void rollBack() throws Exception {
-        dao.getConnection().rollback();
+       dao.getConnection().rollback();
     }
 
 }

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class Question {
     private int id;
     private String textOfQuestion;
-    private String stringOfImageForQuestion;
+    private String linkOfImageForQuestion;
     private ArrayList<Answer> answers = new ArrayList<Answer>();
 
     public class Answer {
@@ -57,7 +57,7 @@ public class Question {
     public Question(String textOfQuestion, String stringOfImageForQuestion) {
 
         this.textOfQuestion = textOfQuestion;
-        this.stringOfImageForQuestion = stringOfImageForQuestion;
+        this.linkOfImageForQuestion = stringOfImageForQuestion;
 
     }
 
@@ -74,31 +74,39 @@ public class Question {
     }
 
     public String getStringOfImageForQuestion() {
-        return stringOfImageForQuestion;
+        return linkOfImageForQuestion;
     }
 
     public void setStringOfImageForQuestion(String stringOfImageForQuestion) {
-        this.stringOfImageForQuestion = stringOfImageForQuestion;
+        this.linkOfImageForQuestion = stringOfImageForQuestion;
     }
 
     public ArrayList<Answer> getAnswers() {
         return answers;
     }
 
+    /**
+     * Три различных методв для добавления ответов
+     */
     public void addAnswer(Answer answer) {
         this.answers.add(answer);
     }
-
     public void addAnswer(String text_answer, boolean right) {
         this.answers.add(new Answer(text_answer, right));
     }
+    public void addAnswer(int id, String text_answer, boolean right) {
+        Answer answer = new Answer(text_answer, right);
+        answer.setId(id);
+        this.answers.add(answer);
+    }
+
 
     @Override
     public String toString() {
         return "Question{ \n" +
                 "id='" + (id==0?"Noun":id) + '\'' +
                 ",\ntextOfQuestion='" + textOfQuestion + '\'' +
-                ",\nstringOfImageForQuestion='" + stringOfImageForQuestion + '\'' +
+                ",\nstringOfImageForQuestion='" + linkOfImageForQuestion + '\'' +
                 ",\nanswers=" + answers +
                 '}';
     }
