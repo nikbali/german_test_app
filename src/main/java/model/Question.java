@@ -59,7 +59,6 @@ public class Question {
 
         this.textOfQuestion = textOfQuestion;
         this.linkOfImageForQuestion = stringOfImageForQuestion;
-
     }
 
 /**
@@ -83,6 +82,16 @@ public class Question {
     }
     public ArrayList<Answer> getAnswers() {
         return answers;
+    }
+
+    /**
+     * Метод возвращет Answer по его индексу в спаиске
+     * @param i номер индекса ответа
+     * @return Answer
+     */
+    public Answer getAnswer(int i)
+    {
+        return this.answers.get(i);
     }
 
     /**
