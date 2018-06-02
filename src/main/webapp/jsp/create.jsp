@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Add Question</h1>
-    <form id= "createQuestionForm" action="http://localhost:8888/create" method="post" enctype="multipart/form-data">
+    <form id= "createQuestionForm" action="http://nikbali.ru/create" method="post" enctype="multipart/form-data">
 		<p>
 			<label>Input text question:</label><br>
 			<textarea rows="5" cols = "100" name="text_question" id="text_question"></textarea>

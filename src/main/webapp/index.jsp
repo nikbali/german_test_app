@@ -10,9 +10,9 @@
  <body>
  
   <div id="container">
-	   <div id="header">Testing for citizenship</div><!шапка>
+	   <div id="header">Testing for citizenship</div>
 	   
-	   <div id="sidebar"> <!меню слева>
+	   <div id="sidebar"> 
 			<p><a href="jsp/test_process.jsp" class="btn_menu">Start the test</a></p>
 			<p><a href="jsp/create.jsp"class="btn_menu">Add question</a></p>
 			<p><a href="https://github.com/nikbali/"class="btn_menu">Update question</a></p>

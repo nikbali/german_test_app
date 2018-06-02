@@ -30,6 +30,7 @@ import java.util.Enumeration;
 @WebServlet("/create")
 @MultipartConfig
 public class CreateQuestionServlet extends HttpServlet {
+    public static final String SAVE_DIRECTORY = "uploadDir";
 
 @Override
 protected void doPost(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws ServletException, IOException {
@@ -40,6 +41,22 @@ protected void doPost(HttpServletRequest httpServletRequest, HttpServletResponse
     String fileName = getSubmittedFileName(filePart);
     Enumeration<String> params_names = httpServletRequest.getParameterNames();
 
+    String appPath = httpServletRequest.getServletContext().getRealPath("");
+    appPath = appPath.replace('\\', '/');
+
+    // путь к директории в файловой системе в которую сохраняем файл
+    String fullSavePath = null;
+    if (appPath.endsWith("/")) {
+        fullSavePath = appPath + SAVE_DIRECTORY;
+    } else {
+        fullSavePath = appPath + "/" + SAVE_DIRECTORY;
+    }
+    // создаем директорию
+    File fileSaveDir = new File(fullSavePath);
+    if (!fileSaveDir.exists()) {
+        fileSaveDir.mkdir();
+    }
+
     //проходим циклом по всем параметром и сетим значения в объект current_question
     while (params_names.hasMoreElements())
     {
@@ -48,7 +65,6 @@ protected void doPost(HttpServletRequest httpServletRequest, HttpServletResponse
         if(str[0].equals("name"))
         {
             current_question.addAnswer(httpServletRequest.getParameter(param), false);
-            System.out.println("Вопрос №" + str[1] + " текст: "+ httpServletRequest.getParameter(param));
         }
         if(str[0].equals("isRight"))
         {
@@ -57,11 +73,11 @@ protected void doPost(HttpServletRequest httpServletRequest, HttpServletResponse
 
     }
     //так как возможено что вопрос создается без приложенного файла
-    if(fileName != null || !fileName.equals(""))
+    if(fileName != null && fileName.length() > 0)
     {
-
+        String filePath = fullSavePath + File.separator + fileName; //полный путь к файлу
         BufferedInputStream fileContent = new BufferedInputStream(filePart.getInputStream());
-        FileOutputStream out = new FileOutputStream(fileName);
+        FileOutputStream out = new FileOutputStream(filePath);
         while (fileContent.available() > 0) {
             int data = fileContent.read();
             out.write(data);
@@ -70,12 +86,16 @@ protected void doPost(HttpServletRequest httpServletRequest, HttpServletResponse
         out.flush();
         out.close();
         fileContent.close();
+
+
     }
     try
     {
         MySqlDaoFactory dao = MySqlDaoFactory.getInstance();
         GenericDAO<Question> question_dao = dao.getQuestionDAO();
         question_dao.create(current_question);
+        httpServletResponse.getWriter().write("<p> Success! Created question!</p>" +
+                current_question.toString() + "<br>" + fullSavePath);
     }
     catch (ClassNotFoundException ex)
     {
@@ -89,8 +109,6 @@ protected void doPost(HttpServletRequest httpServletRequest, HttpServletResponse
         httpServletResponse.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
         httpServletResponse.getWriter().write("<p> Error:</p>" + ex.getMessage());
     }
-    httpServletResponse.getWriter().write("<p> Success! Created question!</p>" +
-            current_question.toString());
 }
 
 

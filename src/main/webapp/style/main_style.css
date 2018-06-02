@@ -1,0 +1,61 @@
+	body {
+		font-family: 'Open Sans Condensed', sans-serif;
+		background: #B3E5FC; /* Цвет фона */
+	
+   }
+   h2 {	   
+    font-size: 1.1em; /* Размер шрифта */
+    color: #800040; /* Цвет текста */
+    margin-top: 0; /* Отступ сверху */
+   }
+   #container {
+    width: 90%; /* Ширина слоя */
+    margin: 0 auto; /* Выравнивание по центру */
+    background: #f0f0f0; /* Цвет фона левой колонки */
+   }
+   #header {
+    font-size: 3.3em; /* Размер текста */
+    text-align: center; /* Выравнивание по центру */
+    padding: 15px; /* Отступы вокруг текста */
+    background: #8fa09b; /* Цвет фона шапки */
+    color: #ffe; /* Цвет текста */
+   }
+   #sidebar {
+	font-size: 1.3em; /* Размер текста */
+    margin-top: 10px; 
+    width: 150px; /* Ширина слоя */
+    padding: 0 10px; /* Отступы вокруг текста */
+    float: left; /* Обтекание по правому краю */
+   }
+   #content {
+    margin-left: 130px; /* Отступ слева */
+    padding: 10px; /* Поля вокруг текста */
+    background: #fff; /* Цвет фона правой колонки */
+   }
+   #footer {
+	
+    background: #8fa09b; /* Цвет фона подвала */
+    color: #fff; /* Цвет текста */
+    padding: 5px; /* Отступы вокруг текста */
+    clear: left; /* Отменяем действие float */
+   }
+   
+   /*Стили для кнопок меню в sidebar */
+   a.btn_menu {
+	  display:block;
+	  font-size: 13px;
+	  width: 70px;	
+	  color: white;
+	  text-decoration: none;
+	  padding: .2em 1.2em;
+	  border-radius: 3px;
+	  background: #9E9E9E;
+	  box-shadow: 0 -3px #616161 inset;
+	  transition: 0.2s;
+	} 
+	a.btn_menu:hover { background: #455A64 }
+	a.btn_menu:active {
+	  background: #263238;
+	  box-shadow: 0 3px #607D8B inset;
+	}
+   

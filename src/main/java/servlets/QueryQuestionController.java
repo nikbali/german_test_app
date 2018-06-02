@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,8 +26,10 @@ public class QueryQuestionController extends HttpServlet {
         res.setCharacterEncoding("utf-8");
         res.setContentType("text/html");
         Gson gson = new Gson();
+
         String json = "";
-        PrintWriter writer = new PrintWriter(new OutputStreamWriter(res.getOutputStream()));
+        PrintWriter writer = new PrintWriter(new OutputStreamWriter(res.getOutputStream(), StandardCharsets.UTF_8));
+
         try
         {
             MySqlDaoFactory dao = MySqlDaoFactory.getInstance();
@@ -64,7 +67,7 @@ public class QueryQuestionController extends HttpServlet {
             res.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             json = gson.toJson(new Error("Incorrect request parameters.", false, ex.getMessage()));
         }
-        finally {
+        finally{
             writer.write(json);
             writer.flush();
             writer.close();
