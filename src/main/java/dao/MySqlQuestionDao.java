@@ -26,28 +26,28 @@ public class MySqlQuestionDao implements GenericDAO<Question> {
         int id = -1;
         PreparedStatement ps;
 
-            ps = connection.prepareStatement(sql_create_question);
-            ps.setString(1, question.getTextOfQuestion());
-            ps.setString(2, question.getStringOfImageForQuestion());
-            ps.executeUpdate();
-            PreparedStatement stm2 = connection.prepareStatement(query_last);
-            ResultSet rs = stm2.executeQuery();
-            rs.next();
-            id = rs.getInt("id");
-            stm2.close();
-            if(question.getAnswers().size() != 0)
+        ps = connection.prepareStatement(sql_create_question);
+        ps.setString(1, question.getTextOfQuestion());
+        ps.setString(2, question.getStringOfImageForQuestion());
+        ps.executeUpdate();
+        PreparedStatement stm2 = connection.prepareStatement(query_last);
+        ResultSet rs = stm2.executeQuery();
+        rs.next();
+        id = rs.getInt("id");
+        stm2.close();
+        if(question.getAnswers().size() != 0)
+        {
+            PreparedStatement stm3 = connection.prepareStatement(sql_answer_create);
+            for(Question.Answer answer : question.getAnswers())
             {
-                PreparedStatement stm3 = connection.prepareStatement(sql_answer_create);
-                for(Question.Answer answer : question.getAnswers())
-                {
-                    stm3.setString(1, answer.getText());
-                    stm3.setInt(2, id);
-                    stm3.setBoolean(3, answer.isRight());
-                    stm3.executeUpdate();
-                }
-                stm3.close();
+                stm3.setString(1, answer.getText());
+                stm3.setInt(2, id);
+                stm3.setBoolean(3, answer.isRight());
+                stm3.executeUpdate();
             }
-            ps.close();
+            stm3.close();
+        }
+        ps.close();
 
         return id;
     }
@@ -84,11 +84,11 @@ public class MySqlQuestionDao implements GenericDAO<Question> {
     public boolean delete(int pk) throws SQLException {
         String sql_delete_question = " DELETE FROM Question\n" +
                 "WHERE id = ?;";
-            PreparedStatement ps = connection.prepareStatement(sql_delete_question);
-            ps.setInt(1, pk);
-            int cnt = ps.executeUpdate();
-            ps.close();
-            return (cnt>0?true:false);
+        PreparedStatement ps = connection.prepareStatement(sql_delete_question);
+        ps.setInt(1, pk);
+        int cnt = ps.executeUpdate();
+        ps.close();
+        return (cnt>0?true:false);
     }
 
     @Override
@@ -117,6 +117,6 @@ public class MySqlQuestionDao implements GenericDAO<Question> {
 
     }
 
-    
+
 
 }

@@ -9,7 +9,6 @@ public class Question {
     private String textOfQuestion;
     private String linkOfImageForQuestion;
     private ArrayList<Answer> answers = new ArrayList<Answer>();
-
     public class Answer {
         private int id;
         private String text;
@@ -53,7 +52,9 @@ public class Question {
         }
     }
 
-
+    /**
+     ///////////////////////////Конструкторы//////////////////////////////////////////////////////////
+     */
     public Question(String textOfQuestion, String stringOfImageForQuestion) {
 
         this.textOfQuestion = textOfQuestion;
@@ -61,10 +62,12 @@ public class Question {
 
     }
 
+/**
+    ///////////////////////////ГЕТТЕРЫ и СЕТТЕРЫ//////////////////////////////////////////////////////////
+ */
     public String getTextOfQuestion() {
         return textOfQuestion;
     }
-
     public void setTextOfQuestion(String textOfQuestion) {
         this.textOfQuestion = textOfQuestion;
     }
@@ -72,15 +75,12 @@ public class Question {
     {
         this.id = id;
     }
-
     public String getStringOfImageForQuestion() {
         return linkOfImageForQuestion;
     }
-
     public void setStringOfImageForQuestion(String stringOfImageForQuestion) {
         this.linkOfImageForQuestion = stringOfImageForQuestion;
     }
-
     public ArrayList<Answer> getAnswers() {
         return answers;
     }

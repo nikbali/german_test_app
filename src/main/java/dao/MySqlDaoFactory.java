@@ -16,7 +16,7 @@ public class MySqlDaoFactory implements DAOFactory {
 
     private String userName = "gb_db_nikbali";
     private String password = "3c52724479a";
-    private String connectionUrl = "jdbc:mysql://mysql99.1gb.ru:3306/gb_db_nikbali?autoReconnect=true&useSSL=false&serverTimezone=UTC";
+    private String connectionUrl = "jdbc:mysql://mysql99.1gb.ru:3306/gb_db_nikbali?autoReconnect=true&useSSL=false&serverTimezone=UTC&useUnicode=yes&characterEncoding=UTF-8";
     private Connection cons;
     private static MySqlDaoFactory instance;
 
