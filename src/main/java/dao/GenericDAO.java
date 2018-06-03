@@ -1,5 +1,6 @@
 package dao;
 
+import Constant.TypeQueryQuestion;
 import model.Question;
 import java.sql.SQLException;
 import java.util.List;
@@ -25,6 +26,10 @@ public interface GenericDAO <T>  {
     /** Удаляет запись  из базы данных по PK */
     boolean delete(int pk) throws SQLException;
 
-    /** @return  List объектов соответствующих всем записям в базе данных */
+
+    /**
+     * Метод возвращает список всех объектов из БД
+     * @return List объектов типа T
+     */
     List<T> getAll() throws SQLException;
 }

@@ -11,18 +11,15 @@ var curent = 0;
 function loadData(){
 try
 {
-    for(var i = 1 ; i  < 20; i++ )
-    {
-
-      var url = "http://nikbali.ru/queryquestion?id="+ (i+300) +""; //плюс тристо это просто ход чтоб данные были не кривми
+    
+      var url = "http://nikbali.ru/queryquestion?rand=20"; 
       xhr.open('GET', url, false);
       xhr.send();
       if (xhr.status == 200)
       { 
-        objects[cnt] = JSON.parse(xhr.responseText);
-        cnt++;
+        objects = JSON.parse(xhr.responseText);
       }
-    }
+    
 }
 catch(e)
 {

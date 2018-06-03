@@ -17,13 +17,11 @@ public class JSONQuestionDaoTest {
     GenericDAO<Question> question_dao_db;
 
     @Test
-    public void getAll() throws Exception {
+    public void createQuestionFromJson() throws Exception {
         question_dao = JSONQuestionDao.getInstance();
         JSONQuestionDao js = (JSONQuestionDao) question_dao;
         System.out.println(js.hasFile());
-
         ArrayList<Question> questions = (ArrayList<Question>) question_dao.getAll();
-
         dao = MySqlDaoFactory.getInstance();
         question_dao_db = dao.getQuestionDAO();
         for(Question q : questions){

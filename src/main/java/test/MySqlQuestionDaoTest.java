@@ -2,6 +2,7 @@ package test;
 
 import dao.GenericDAO;
 import dao.MySqlDaoFactory;
+import dao.MySqlQuestionDao;
 import model.Question;
 import org.junit.*;
 import java.sql.SQLException;
@@ -19,7 +20,7 @@ import static org.junit.Assert.assertEquals;
 public class MySqlQuestionDaoTest {
 
     MySqlDaoFactory dao;
-    GenericDAO<Question> question_dao;
+    MySqlQuestionDao question_dao;
     static int num;
 
     @Before
@@ -53,6 +54,16 @@ public class MySqlQuestionDaoTest {
     public void getAll() throws Exception {
         List<Question> questions = question_dao.getAll();
         System.out.println(questions);
+    }
+
+    @Test
+    public void getRandom() throws Exception
+    {
+      ArrayList<Question> questions = question_dao.getRandom(20);
+      for(Question obj : questions)
+      {
+          System.out.println(obj);
+      }
     }
     @After
     public void rollBack() throws Exception {

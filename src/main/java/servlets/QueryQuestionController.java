@@ -3,6 +3,7 @@ package servlets;
 import com.google.gson.Gson;
 import dao.GenericDAO;
 import dao.MySqlDaoFactory;
+import dao.MySqlQuestionDao;
 import model.Error;
 import model.Question;
 import javax.servlet.annotation.WebServlet;
@@ -26,28 +27,41 @@ public class QueryQuestionController extends HttpServlet {
         res.setCharacterEncoding("utf-8");
         res.setContentType("text/html");
         Gson gson = new Gson();
-
         String json = "";
         PrintWriter writer = new PrintWriter(new OutputStreamWriter(res.getOutputStream(), StandardCharsets.UTF_8));
 
         try
         {
             MySqlDaoFactory dao = MySqlDaoFactory.getInstance();
-            GenericDAO<Question> question_dao = dao.getQuestionDAO();
-            int id =Integer.parseInt(req.getParameter("id"));
-            //если параметр id равен -1 возращаем список всех вопросов
-            if(id == -1)
+            MySqlQuestionDao question_dao = dao.getQuestionDAO();
+            String id_param = req.getParameter("id");
+            String rand_param = req.getParameter("rand");
+
+///////////////////////////////ДИСПАТЧЕР РАЗЛИЧНЫХ ПАРАМЕТРОВ//////////////////////////////////////////////////////
+
+            ///поиск по параметру id
+            if(id_param != null && rand_param == null)
             {
-                List<Question> questions = question_dao.getAll();
+                int id = Integer.parseInt(id_param);
+                //если параметр id равен -1 возращаем список всех вопросов
+                if (id == -1) {
+                    List<Question> questions = question_dao.getAll();
+                    json = gson.toJson(questions);
+                }
+                //иначе возвращаем вопрос по id
+                else {
+                    Question question = question_dao.getByPK(id);
+                    json = gson.toJson(question);
+                }
+            }
+            //поиск случайных вопросов по параметру rand
+            else if (id_param == null && rand_param != null)
+            {
+                int rand = Integer.parseInt(rand_param);
+                List<Question> questions = question_dao.getRandom(rand);
                 json = gson.toJson(questions);
             }
-            //иначе возвращаем вопрос по id
-            else
-            {
-                Question question = question_dao.getByPK(id);
-                json = gson.toJson(question);
-            }
-
+            else throw new NumberFormatException("You can not go through two levels of id and rand at once.");
         }
         catch (ClassNotFoundException ex)
         {

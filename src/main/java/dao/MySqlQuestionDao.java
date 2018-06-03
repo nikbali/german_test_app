@@ -91,11 +91,14 @@ public class MySqlQuestionDao implements GenericDAO<Question> {
         return (cnt>0?true:false);
     }
 
+
     @Override
     public ArrayList<Question> getAll() throws SQLException {
         String sql = "SELECT * FROM Question;";
         String sql_answers = "SELECT * FROM Answer WHERE question_id = ?;";
         PreparedStatement stm = connection.prepareStatement(sql);
+
+
         ResultSet rs = stm.executeQuery();
         ArrayList<Question> list = new ArrayList<Question>();
         while (rs.next()) {
@@ -115,6 +118,39 @@ public class MySqlQuestionDao implements GenericDAO<Question> {
         stm.close();
         return list;
 
+    }
+
+
+
+    /**
+     * Метод возвращает список из N случайных вопросов из БД
+     * @param N количество вопросов
+     * @return ArrayList вопросов
+     */
+    public ArrayList<Question> getRandom(int N) throws SQLException
+    {
+        String sql = "SELECT * FROM Question ORDER BY RAND() LIMIT ?;";
+        String sql_answers = "SELECT * FROM Answer WHERE question_id = ?;";
+        PreparedStatement stm = connection.prepareStatement(sql);
+        stm.setInt(1, N);
+        ResultSet rs = stm.executeQuery();
+        ArrayList<Question> list = new ArrayList<Question>();
+        while (rs.next()) {
+            Question question = new Question(rs.getString("text"),rs.getString("image_path"));
+            int id = rs.getInt("id");
+            question.setId(id);
+            PreparedStatement stm2 = connection.prepareStatement(sql_answers);
+            stm2.setInt(1, id);
+            ResultSet resultSetAnswer = stm2.executeQuery();
+            while (resultSetAnswer.next())
+            {
+                question.addAnswer(resultSetAnswer.getInt("id"), resultSetAnswer.getString("text"), resultSetAnswer.getBoolean("right_flag"));
+            }
+            stm2.close();
+            list.add(question);
+        }
+        stm.close();
+        return list;
     }
 
 

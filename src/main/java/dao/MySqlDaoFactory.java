@@ -40,7 +40,7 @@ public class MySqlDaoFactory implements DAOFactory {
     }
 
     @Override
-    public GenericDAO<Question> getQuestionDAO() {
+    public MySqlQuestionDao getQuestionDAO() {
         return new MySqlQuestionDao(cons);
     }
 
