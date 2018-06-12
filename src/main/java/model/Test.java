@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -7,21 +8,26 @@ import java.util.Set;
 public class Test {
     private int id;
     private String name;
-    private HashSet<Theme> thematics = new HashSet<Theme>();
+    private List<Theme> thematics = new ArrayList<Theme>();
 
         /////////////Constructor/////////////////////////
-    public Test(int id, String name)
+    public Test( int id, String name)
     {
         this.id = id;
         this.name = name;
     }
 
-    public void setThematics(List<Theme> thematics)
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void addThema(Theme thema)
     {
-        for(Theme theme : thematics)
-        {
-            if(this.equals(theme)) thematics.add(theme);
-        }
+        thematics.add(thema);
     }
 
     public String getName() {

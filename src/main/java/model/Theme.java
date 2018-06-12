@@ -6,16 +6,16 @@ public class Theme
 {
     private int id;
     private String name;
-    private Test test;
+    private String test;
     private HashSet<Question> questions;
 
     ///////////////////////////////CONSTRUCTORS///////////////////////////////////////////////////////
 
-    public Theme(int id, String name, Test test)
+    public Theme(int id, String name, String test)
     {
         this.id = id;
-        this.test = test;
         this.name = name;
+        this.test = test;
     }
 
     public Theme(String name)
@@ -27,6 +27,7 @@ public class Theme
     public String getName() {
         return name;
     }
+
     public int getId() {
         return id;
     }
@@ -55,7 +56,7 @@ public class Theme
         return "Theme{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", test=" + test.getName() +
+                ", test=" + test +
                 ", questions=" + questions +
                 '}';
     }

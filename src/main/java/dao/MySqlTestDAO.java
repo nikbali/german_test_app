@@ -1,7 +1,9 @@
 package dao;
 
 import dao.Interfaces.GenericDAO;
+import model.Question;
 import model.Test;
+import model.Theme;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -24,13 +26,25 @@ public class MySqlTestDAO implements GenericDAO<Test> {
     @Override
     public Test getByPK(int pk) throws SQLException {
         String sql = "SELECT * FROM Test WHERE id = ?;";
+        String sql_tematics = "SELECT * FROM Theme WHERE test_id = ?;";
+
         PreparedStatement ps = connection.prepareStatement(sql);
         ps.setInt(1, pk);
         ResultSet resultSet = ps.executeQuery();
         resultSet.next();
-        Test test = new Test(resultSet.getInt("id"), resultSet.getString("name"));
+        Test cur_test = new Test(resultSet.getInt("id"),resultSet.getString("name"));
+
+        //поиск по темам
+        PreparedStatement stm2 = connection.prepareStatement(sql_tematics);
+        stm2.setInt(1, pk);
+        ResultSet resultSetTheme = stm2.executeQuery();
+        while (resultSetTheme.next())
+        {
+            cur_test.addThema(new Theme(resultSetTheme.getInt("id"), resultSetTheme.getString("name"), cur_test.getName()));
+        }
         ps.close();
-        return test;
+        stm2.close();
+        return cur_test;
     }
 
     @Override

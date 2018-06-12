@@ -43,7 +43,7 @@ public class MySQLThemeDAO implements GenericDAO<Theme> {
         ps.setInt(1, pk);
         ResultSet resultSet = ps.executeQuery();
         resultSet.next();
-        Theme theme = new Theme(resultSet.getInt("id"), resultSet.getString("name"),test_dao.getByPK(resultSet.getInt("test_id")));
+        Theme theme = new Theme(resultSet.getInt("id"), resultSet.getString("name"),test_dao.getByPK(resultSet.getInt("test_id")).getName());
         ps.close();
         return theme;
     }
@@ -69,10 +69,12 @@ public class MySQLThemeDAO implements GenericDAO<Theme> {
         {
             int test_id = resultSet.getInt("test_id");
             Test test = test_dao.getByPK(test_id);
-            Theme theme = new Theme(resultSet.getInt("id"), resultSet.getString("name"), test);
+            Theme theme = new Theme(resultSet.getInt("id"), resultSet.getString("name"), test.getName());
             list_tests.add(theme);
         }
         ps.close();
         return list_tests;
     }
+
+
 }
