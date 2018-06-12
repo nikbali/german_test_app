@@ -11,8 +11,8 @@ var curent = 0;
 function loadData(){
 try
 {
-    
-      var url = "http://nikbali.ru/queryquestion?rand=20"; 
+   
+      var url = "http://nikbali.ru/queryquestion?rand=20"; //плюс тристо это просто ход чтоб данные были не кривми
       xhr.open('GET', url, false);
       xhr.send();
       if (xhr.status == 200)
@@ -23,17 +23,17 @@ try
 }
 catch(e)
 {
-    alert('Error load data from Internet'); 
-    document.location.href ="http://nikbali.ru/";
+    alert('Ошибка загрузки данных из интеренета'); 
+    document.location.href ='main.html';
 }
 }
 function Engine(question, answer) {yourAns[question]=answer;}
 function Score(){
-   var answerText = "Results:\n";
+   var answerText = "Результаты:\n";
    for(var i = 0; i < yourAns.length; ++i)
    {
       var num = i+1;
-      answerText=answerText+"\n    Question: "+ num +"";
+      answerText=answerText+"\n    Вопрос №"+ num +"";
       var true_ans = "";
       var number_ans;
       //поиск правильного ответа в вопросе
@@ -48,28 +48,28 @@ function Score(){
       
       if(true_ans=="")
       {
-          answerText=answerText+"\n    Answer true: " + " Error In Data\n";
+          answerText=answerText+"\n    Правильный ответ: " + " Ошибка в данных\n";
       }
       else
       {
           if(yourAns[i] == number_ans)
           {
-            answerText=answerText+": True! \n";
+            answerText=answerText+": Верно! \n";
             ++score;
           }
           else
           {
-            answerText=answerText+"\n    Answer true: " +true_ans +"\n";
+            answerText=answerText+"\n    Правильный ответ: " +true_ans +"\n";
           }
       }
    }
 
-   answerText=answerText+"\nYour score: "+score+"\n";
+   answerText=answerText+"\nВсего правильных ответов: "+score+"\n";
 
    alert(answerText);
    yourAns = [];
    score = 0;
-   document.location.href ="http://nikbali.ru/";
+   document.location.href ='main.html';
 }
 
 
@@ -80,7 +80,7 @@ function nextQuestion(){
     }
     else
     {
-       var sp1 = document.createElement("div"); //тут все дело храним
+      var sp1 = document.createElement("div"); //тут все дело храним
        sp1.setAttribute("id", "process");
        
             
