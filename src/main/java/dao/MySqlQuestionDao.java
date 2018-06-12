@@ -184,6 +184,52 @@ public class MySqlQuestionDao implements GenericDAO<Question> {
         return list;
     }
 
+
+    /**
+     * Методы возвращает список вопросов указанной тематики
+     * @param name наименование тематики
+     * @param N кол-во вопросов(случайное)
+     * @return ArrayList вопросов
+     */
+    public ArrayList<Question> getQuestionByTheme(String name, int N) throws SQLException
+    {
+        //два различных варианта запроса для всех или для N записей
+        String sql_all = "select * \n" +
+                "from Question q inner join Theme t on q.theme_id = t.id\n" +
+                "where t.name = ?;";
+        String sql_rand = "select * \n" +
+                "from Question q inner join Theme t on q.theme_id = t.id\n" +
+                "where t.name = ? ORDER BY RAND() LIMIT ?;";
+
+        String sql_answers = "SELECT * FROM Answer WHERE question_id = ?;";
+        PreparedStatement stm = connection.prepareStatement(N>0?sql_rand:sql_all);
+        stm.setString(1, name);
+        if(N>0)stm.setInt(2, N);//костль небольшой
+        ResultSet rs = stm.executeQuery();
+        ArrayList<Question> list = new ArrayList<Question>();
+        while (rs.next()) {
+            Question question = new Question(rs.getString("text"),rs.getString("image_path"), name);
+            int id = rs.getInt("id");
+            question.setId(id);
+            PreparedStatement stm2 = connection.prepareStatement(sql_answers);
+            stm2.setInt(1, id);
+            ResultSet resultSetAnswer = stm2.executeQuery();
+            while (resultSetAnswer.next())
+            {
+                question.addAnswer(resultSetAnswer.getInt("id"), resultSetAnswer.getString("text"), resultSetAnswer.getBoolean("right_flag"));
+            }
+            stm2.close();
+            list.add(question);
+        }
+        stm.close();
+        return list;
+    }
+    public ArrayList<Question> getQuestionByTheme(String name) throws SQLException
+    {
+        return getQuestionByTheme(name, -1);
+    }
+
+
     /**
      * Метод заполняет кэш с темами
      */

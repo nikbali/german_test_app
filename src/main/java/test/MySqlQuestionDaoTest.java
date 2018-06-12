@@ -67,6 +67,17 @@ public class MySqlQuestionDaoTest {
           System.out.println(obj);
       }
     }
+
+    @Test
+    public void getQuestionByTheme() throws Exception
+    {
+        ArrayList<Question> questions = question_dao.getQuestionByTheme("General", 10);
+        for(Question obj : questions)
+        {
+            System.out.println(obj);
+        }
+    }
+
     @After
     public void rollBack() throws Exception {
        dao.getConnection().rollback();
