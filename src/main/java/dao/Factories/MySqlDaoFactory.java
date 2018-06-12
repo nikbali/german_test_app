@@ -3,6 +3,7 @@ package dao.Factories;
 
 import dao.Interfaces.DAOFactory;
 import dao.Interfaces.GenericDAO;
+import dao.MySQLThemeDAO;
 import dao.MySqlQuestionDao;
 import dao.Interfaces.UserDAO;
 import dao.MySqlTestDAO;
@@ -58,7 +59,7 @@ public class MySqlDaoFactory implements DAOFactory {
 
     @Override
     public GenericDAO<Theme> getThemeDAO() {
-        return null;
+        return new MySQLThemeDAO(cons);
     }
 
     @Override

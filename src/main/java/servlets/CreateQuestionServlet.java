@@ -7,9 +7,8 @@ import com.google.gson.stream.JsonWriter;
 import dao.Interfaces.GenericDAO;
 import dao.JsonUser;
 import dao.Factories.MySqlDaoFactory;
+import model.*;
 import model.Error;
-import model.Question;
-import model.User;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -35,7 +34,7 @@ public class CreateQuestionServlet extends HttpServlet {
 @Override
 protected void doPost(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws ServletException, IOException {
     //cоздали объект вопроса и сетим ему поля
-    Question current_question = new Question("", "");
+    Question current_question = new Question("", "", "Default");
     current_question.setTextOfQuestion(httpServletRequest.getParameter("text_question"));
     Part filePart = httpServletRequest.getPart("upload");
     String fileName = getSubmittedFileName(filePart);

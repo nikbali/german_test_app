@@ -8,7 +8,7 @@ public class Question {
     private int id;
     private String textOfQuestion;
     private String linkOfImageForQuestion;
-    private String thema;
+    private String theme;
     private ArrayList<Answer> answers = new ArrayList<Answer>();
     public class Answer {
         private int id;
@@ -56,10 +56,11 @@ public class Question {
     /**
      ///////////////////////////Конструкторы//////////////////////////////////////////////////////////
      */
-    public Question(String textOfQuestion, String stringOfImageForQuestion) {
+    public Question(String textOfQuestion, String stringOfImageForQuestion,  String theme) {
 
         this.textOfQuestion = textOfQuestion;
         this.linkOfImageForQuestion = stringOfImageForQuestion;
+        this.theme = theme;
     }
 
 /**
@@ -84,11 +85,12 @@ public class Question {
     public ArrayList<Answer> getAnswers() {
         return answers;
     }
+
     public String getThema() {
-        return thema;
+        return theme;
     }
     public void setThema(String thema) {
-        this.thema = thema;
+        this.theme = thema;
     }
 
     /**
@@ -122,7 +124,7 @@ public class Question {
         return "Question{ \n" +
                 "id='" + (id==0?"Noun":id) + '\'' +
                 ",\ntextOfQuestion='" + textOfQuestion + '\'' +
-                ",\nthema='" + thema + '\'' +
+                ",\ntheme='" + theme + '\'' +
                 ",\nstringOfImageForQuestion='" + linkOfImageForQuestion + '\'' +
                 ",\nanswers=" + answers +
                 '}';

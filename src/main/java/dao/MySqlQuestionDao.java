@@ -2,6 +2,8 @@ package dao;
 
 import dao.Interfaces.GenericDAO;
 import model.Question;
+import model.Theme;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -62,7 +64,12 @@ public class MySqlQuestionDao implements GenericDAO<Question> {
         stm.setInt(1, key);
         ResultSet rs = stm.executeQuery();
         rs.next();
-        Question question = new Question(rs.getString("text"),rs.getString("image_path"));
+
+        //добавление темы к вопросу
+        int thema_id = rs.getInt("theme_id");
+        Theme theme = new MySQLThemeDAO(connection).getByPK(thema_id);
+
+        Question question = new Question(rs.getString("text"),rs.getString("image_path"), theme.getName());
         question.setId(rs.getInt("id"));
         PreparedStatement stm2 = connection.prepareStatement(sql_answers);
         stm2.setInt(1, key);
@@ -99,11 +106,13 @@ public class MySqlQuestionDao implements GenericDAO<Question> {
         String sql_answers = "SELECT * FROM Answer WHERE question_id = ?;";
         PreparedStatement stm = connection.prepareStatement(sql);
 
-
         ResultSet rs = stm.executeQuery();
         ArrayList<Question> list = new ArrayList<Question>();
         while (rs.next()) {
-            Question question = new Question(rs.getString("text"),rs.getString("image_path"));
+            //добавление темы к вопросу
+            int thema_id = rs.getInt("theme_id");
+            Theme theme = new MySQLThemeDAO(connection).getByPK(thema_id);
+            Question question = new Question(rs.getString("text"),rs.getString("image_path"), theme.getName());
             int id = rs.getInt("id");
             question.setId(id);
             PreparedStatement stm2 = connection.prepareStatement(sql_answers);
@@ -137,7 +146,10 @@ public class MySqlQuestionDao implements GenericDAO<Question> {
         ResultSet rs = stm.executeQuery();
         ArrayList<Question> list = new ArrayList<Question>();
         while (rs.next()) {
-            Question question = new Question(rs.getString("text"),rs.getString("image_path"));
+            //добавление темы к вопросу
+            int thema_id = rs.getInt("theme_id");
+            Theme theme = new MySQLThemeDAO(connection).getByPK(thema_id);
+            Question question = new Question(rs.getString("text"),rs.getString("image_path"), theme.getName());
             int id = rs.getInt("id");
             question.setId(id);
             PreparedStatement stm2 = connection.prepareStatement(sql_answers);

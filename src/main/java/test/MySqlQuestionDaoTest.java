@@ -4,6 +4,7 @@ import dao.Interfaces.GenericDAO;
 import dao.Factories.MySqlDaoFactory;
 import dao.MySqlQuestionDao;
 import model.Question;
+import model.Theme;
 import org.junit.*;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -32,7 +33,7 @@ public class MySqlQuestionDaoTest {
     }
     @Test
     public void create() throws Exception {
-        Question test_question = new Question("Auf welcher Straße steht der Reichstag?", "Street.png" );
+        Question test_question = new Question("Auf welcher Straße steht der Reichstag?", "Street.png", "Default");
         test_question.addAnswer("Scheidemannstraße 2" , true);
         test_question.addAnswer("Monckebergstraße 33" , false);
         test_question.addAnswer("Karl Marx Straße 3" , false);

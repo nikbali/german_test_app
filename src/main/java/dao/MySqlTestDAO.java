@@ -23,7 +23,14 @@ public class MySqlTestDAO implements GenericDAO<Test> {
 
     @Override
     public Test getByPK(int pk) throws SQLException {
-        return null;
+        String sql = "SELECT * FROM Test WHERE id = ?;";
+        PreparedStatement ps = connection.prepareStatement(sql);
+        ps.setInt(1, pk);
+        ResultSet resultSet = ps.executeQuery();
+        resultSet.next();
+        Test test = new Test(resultSet.getInt("id"), resultSet.getString("name"));
+        ps.close();
+        return test;
     }
 
     @Override
