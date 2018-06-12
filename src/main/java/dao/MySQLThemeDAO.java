@@ -9,8 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
+
 
 public class MySQLThemeDAO implements GenericDAO<Theme> {
 
@@ -22,7 +21,18 @@ public class MySQLThemeDAO implements GenericDAO<Theme> {
 
     @Override
     public int create(Theme object) throws SQLException {
-        return 0;
+        String sql_create_thema = "INSERT into Theme(name, test_id) VALUES(?,'1')";
+        String query_last = "SELECT * FROM Theme ORDER BY id desc limit 1";
+        PreparedStatement ps;
+        ps = connection.prepareStatement(sql_create_thema);
+        ps.setString(1, object.getName());
+        ps.executeUpdate();
+        PreparedStatement stm2 = connection.prepareStatement(query_last);
+        ResultSet rs = stm2.executeQuery();
+        rs.next();
+        int id = rs.getInt("id");
+        ps.close();
+        return id;
     }
 
     @Override

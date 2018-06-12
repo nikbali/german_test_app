@@ -30,5 +30,16 @@ public class JSONQuestionDaoTest {
 
     }
 
+    @Test
+    public void createSingleQuestion() throws Exception {
+
+        Question q = new Question("Welches Wappen gehört zum Bundesland Baden-Württemberg?","suchka.jpg", "Thüringe");
+        dao = MySqlDaoFactory.getInstance();
+        question_dao_db = dao.getQuestionDAO();
+        question_dao_db.create(q);
+
+    }
+
+
 
 }

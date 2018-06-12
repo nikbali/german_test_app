@@ -3,40 +3,58 @@ package dao;
 import dao.Interfaces.GenericDAO;
 import model.Question;
 import model.Theme;
+import sun.rmi.runtime.Log;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
 
 
 
 public class MySqlQuestionDao implements GenericDAO<Question> {
     private final Connection connection;
-
-    public MySqlQuestionDao(Connection connection) {
+    private static HashMap<String,Theme> cash_thematics = new HashMap<String, Theme>();
+    public MySqlQuestionDao(Connection connection)
+    {
         this.connection = connection;
+        fillMapWithTheme();
     }
+
 
     @Override
     public int create(Question question) throws SQLException {
+
         String sql_answer_create = "INSERT into Answer(text, question_id, right_flag) VALUES(?,?,?)";
-        String sql_create_question = "INSERT into Question(text, image_path) value(?,?)";
+        String sql_create_question = "INSERT into Question(text, image_path, theme_id) value(?,?,?)";
         String query_last = "SELECT * FROM Question \n" +
                 "ORDER BY id desc limit 1;";
-        int id = -1;
-        PreparedStatement ps;
 
+        /**
+         * Проверка, есть ли тема в мапе, если нет, создаем новую тематику
+         */
+        String name_theme = question.getThema();
+        int theme_id;
+        if(cash_thematics.containsKey(name_theme)) theme_id = cash_thematics.get(name_theme).getId();
+        else
+        {
+            Theme t = new Theme(name_theme);
+            theme_id = new MySQLThemeDAO(connection).create(t);
+            cash_thematics.put(name_theme, t);
+        }
+
+        PreparedStatement ps;
         ps = connection.prepareStatement(sql_create_question);
         ps.setString(1, question.getTextOfQuestion());
         ps.setString(2, question.getStringOfImageForQuestion());
+        ps.setInt(3, theme_id);
         ps.executeUpdate();
         PreparedStatement stm2 = connection.prepareStatement(query_last);
         ResultSet rs = stm2.executeQuery();
         rs.next();
-        id = rs.getInt("id");
+        int id = rs.getInt("id");
         stm2.close();
         if(question.getAnswers().size() != 0)
         {
@@ -166,6 +184,21 @@ public class MySqlQuestionDao implements GenericDAO<Question> {
         return list;
     }
 
-
+    /**
+     * Метод заполняет кэш с темами
+     */
+    private  void fillMapWithTheme()
+    {
+        try {
+            ArrayList<Theme> listTheme = new MySQLThemeDAO(connection).getAll();
+            for (Theme t : listTheme) {
+                cash_thematics.put(t.getName(), t);
+            }
+        }
+        catch (SQLException ex)
+        {
+            System.out.println("Мапа с кэшем Тем не заполнена");
+        }
+    }
 
 }
