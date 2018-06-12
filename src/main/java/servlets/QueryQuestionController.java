@@ -36,11 +36,12 @@ public class QueryQuestionController extends HttpServlet {
             MySqlQuestionDao question_dao = dao.getQuestionDAO();
             String id_param = req.getParameter("id");
             String rand_param = req.getParameter("rand");
+            String theme = req.getParameter("theme");
 
 ///////////////////////////////ДИСПАТЧЕР РАЗЛИЧНЫХ ПАРАМЕТРОВ//////////////////////////////////////////////////////
 
             ///поиск по параметру id
-            if(id_param != null && rand_param == null)
+            if(id_param != null && rand_param == null && theme == null)
             {
                 int id = Integer.parseInt(id_param);
                 //если параметр id равен -1 возращаем список всех вопросов
@@ -54,14 +55,35 @@ public class QueryQuestionController extends HttpServlet {
                     json = gson.toJson(question);
                 }
             }
-            //поиск случайных вопросов по параметру rand
-            else if (id_param == null && rand_param != null)
+            //поиск по наименованию темы
+            else if(id_param == null && theme != null)
+            {
+                //тема и рандом
+                if(rand_param != null)
+                {
+                    int rand = Integer.parseInt(rand_param);
+                    List<Question> questions = question_dao.getQuestionByTheme(theme,rand);
+                    json = gson.toJson(questions);
+                }
+                //просто тема
+                else
+                {
+                    List<Question> questions = question_dao.getQuestionByTheme(theme, -1);
+                    json = gson.toJson(questions);
+                }
+            }
+
+            //поиск вопросов только по параметру rand
+            else if (id_param == null && rand_param != null && theme ==null)
             {
                 int rand = Integer.parseInt(rand_param);
                 List<Question> questions = question_dao.getRandom(rand);
                 json = gson.toJson(questions);
             }
-            else throw new NumberFormatException("You can not go through two levels of id and rand at once.");
+            else throw new NumberFormatException("You can not transfer this combination of parametrs!");
+
+
+
         }
         catch (ClassNotFoundException ex)
         {
