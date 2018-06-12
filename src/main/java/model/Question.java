@@ -8,6 +8,7 @@ public class Question {
     private int id;
     private String textOfQuestion;
     private String linkOfImageForQuestion;
+    private String thema;
     private ArrayList<Answer> answers = new ArrayList<Answer>();
     public class Answer {
         private int id;
@@ -83,6 +84,12 @@ public class Question {
     public ArrayList<Answer> getAnswers() {
         return answers;
     }
+    public String getThema() {
+        return thema;
+    }
+    public void setThema(String thema) {
+        this.thema = thema;
+    }
 
     /**
      * Метод возвращет Answer по его индексу в спаиске
@@ -115,6 +122,7 @@ public class Question {
         return "Question{ \n" +
                 "id='" + (id==0?"Noun":id) + '\'' +
                 ",\ntextOfQuestion='" + textOfQuestion + '\'' +
+                ",\nthema='" + thema + '\'' +
                 ",\nstringOfImageForQuestion='" + linkOfImageForQuestion + '\'' +
                 ",\nanswers=" + answers +
                 '}';

@@ -1,8 +1,8 @@
 package servlets;
 
 import com.google.gson.Gson;
-import dao.GenericDAO;
-import dao.MySqlDaoFactory;
+import dao.Interfaces.GenericDAO;
+import dao.Factories.MySqlDaoFactory;
 import dao.MySqlQuestionDao;
 import model.Error;
 import model.Question;

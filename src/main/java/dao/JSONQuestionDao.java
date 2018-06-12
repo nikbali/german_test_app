@@ -3,6 +3,7 @@ package dao;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
+import dao.Interfaces.GenericDAO;
 import model.Question;
 import model.User;
 
@@ -12,7 +13,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JSONQuestionDao implements GenericDAO<Question>{
+public class JSONQuestionDao implements GenericDAO<Question> {
 
     private final static String USERS_FILE = "D:\\questions.json";
     private static JSONQuestionDao instance;

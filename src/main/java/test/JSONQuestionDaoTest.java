@@ -1,8 +1,8 @@
 package test;
 
-import dao.GenericDAO;
+import dao.Interfaces.GenericDAO;
 import dao.JSONQuestionDao;
-import dao.MySqlDaoFactory;
+import dao.Factories.MySqlDaoFactory;
 import model.Question;
 import org.junit.Test;
 

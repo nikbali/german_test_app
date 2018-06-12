@@ -1,5 +1,6 @@
 package dao;
 
+import dao.Interfaces.GenericDAO;
 import model.Question;
 import java.sql.Connection;
 import java.sql.PreparedStatement;

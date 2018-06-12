@@ -1,12 +1,13 @@
 package test;
 
-import dao.GenericDAO;
-import dao.MySqlDaoFactory;
+import dao.Interfaces.GenericDAO;
+import dao.Factories.MySqlDaoFactory;
 import dao.MySqlQuestionDao;
 import model.Question;
 import org.junit.*;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 
@@ -69,5 +70,6 @@ public class MySqlQuestionDaoTest {
     public void rollBack() throws Exception {
        dao.getConnection().rollback();
     }
+
 
 }

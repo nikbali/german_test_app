@@ -1,4 +1,4 @@
-package dao;
+package dao.Interfaces;
 
 import Constant.TypeQueryQuestion;
 import model.Question;
