@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9043704-3e4c-4ae9-b56a-f8e5216a4f67" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/loadListTheme.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/addField.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/addField.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/QueryQuestionController.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/QueryQuestionController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/loadListTheme.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/loadListTheme.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/scriptForTest.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/scriptForTest.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/add_question.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/add_question.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,25 +24,85 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="add_question.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/add_question.html">
+      <file leaf-file-name="QueryQuestionController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/QueryQuestionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="1343">
+              <caret line="95" column="38" lean-forward="false" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JSONQuestionDaoTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/test/JSONQuestionDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MySqlQuestionDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/MySqlQuestionDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="43" column="57" lean-forward="false" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
               <folding>
-                <element signature="n#style#0;n#input#0;n#label#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#2865#2871#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#getByPK#0;class#MySqlQuestionDao#0" expanded="false" />
+                <element signature="method#update#0;class#MySqlQuestionDao#0" expanded="false" />
+                <element signature="method#delete#0;class#MySqlQuestionDao#0" expanded="false" />
+                <element signature="method#getAll#0;class#MySqlQuestionDao#0" expanded="false" />
+                <element signature="method#getRandom#0;class#MySqlQuestionDao#0" expanded="false" />
+                <element signature="e#5902#5912#0" expanded="true" />
+                <element signature="method#getQuestionByTheme#0;class#MySqlQuestionDao#0" expanded="false" />
+                <element signature="method#fillMapWithTheme#0;class#MySqlQuestionDao#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="MySQLThemeDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/MySQLThemeDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-408">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="204">
+              <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+              <folding>
+                <element signature="method#getByPK#0;class#MySQLThemeDAO#0" expanded="false" />
+                <element signature="method#update#0;class#MySQLThemeDAO#0" expanded="false" />
+                <element signature="method#delete#0;class#MySQLThemeDAO#0" expanded="false" />
+                <element signature="method#getAll#0;class#MySQLThemeDAO#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#230#237#0" expanded="true" />
+                <element signature="method#toString#0;class#Test#0" expanded="false" />
+                <element signature="method#equals#0;class#Test#0" expanded="false" />
+                <element signature="method#hashCode#0;class#Test#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryThemeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/QueryThemeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,7 +178,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Behavior/Query.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/MySqlQuestionDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/test/MySqlQuestionDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/QueryQuestionController.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/QueryThemeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/MySqlTestDAO.java" />
@@ -131,6 +190,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/loadListTheme.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/add_question.html" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/QueryQuestionController.java" />
       </list>
     </option>
   </component>
@@ -253,22 +313,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="mywebproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mywebproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mywebproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mywebproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -318,7 +362,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.Tomcat">
+  <component name="RunManager" selected="JUnit.JSONQuestionDaoTest.createQuestionFromJson">
     <configuration name="JSONQuestionDaoTest.createQuestionFromJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -561,8 +605,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.getQuestionByTheme" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.JSONQuestionDaoTest.createQuestionFromJson" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.JSONQuestionDaoTest.createQuestionFromJson" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.getQuestionByTheme" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.JSONQuestionDaoTest.createSingleQuestion" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.getRandom" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.getAll" />
@@ -734,7 +778,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528847720415</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="js для загрузки списка тематик и создания панелей с ответами">
+      <created>1528888789660</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1528888789661</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -747,8 +798,8 @@
     <history-entry file="JSONQuestionDaoTest_createQuestionFromJson - 2018.06.12 at 20h 08m 42s.xml">
       <configuration name="JSONQuestionDaoTest.createQuestionFromJson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JSONQuestionDaoTest_createSingleQuestion - 2018.06.12 at 19h 42m 39s.xml">
-      <configuration name="JSONQuestionDaoTest.createSingleQuestion" configurationId="JUnit" />
+    <history-entry file="JSONQuestionDaoTest_createQuestionFromJson - 2018.06.13 at 15h 32m 32s.xml">
+      <configuration name="JSONQuestionDaoTest.createQuestionFromJson" configurationId="JUnit" />
     </history-entry>
     <history-entry file="JSONQuestionDaoTest_createSingleQuestion - 2018.06.12 at 19h 44m 00s.xml">
       <configuration name="JSONQuestionDaoTest.createSingleQuestion" configurationId="JUnit" />
@@ -780,6 +831,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3946958" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -788,19 +840,19 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.74414974" sideWeight="0.512945" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33009708" sideWeight="0.48947367" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33009708" sideWeight="0.48947367" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.121684864" sideWeight="0.49029127" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.018720748" sideWeight="0.487055" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.007800312" sideWeight="0.487055" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25161812" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25161812" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21684867" sideWeight="0.49676377" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46957877" sideWeight="0.49676377" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -894,19 +946,20 @@
     <MESSAGE value="add to Servlet logics for new type Query" />
     <MESSAGE value="create get list theme by test id" />
     <MESSAGE value="делаем фронт" />
-    <option name="LAST_COMMIT_MESSAGE" value="делаем фронт" />
+    <MESSAGE value="js для загрузки списка тематик и создания панелей с ответами" />
+    <option name="LAST_COMMIT_MESSAGE" value="js для загрузки списка тематик и создания панелей с ответами" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dao/MySqlTestDAO.java</url>
-          <line>30</line>
+          <url>file://$PROJECT_DIR$/src/main/java/dao/MySqlQuestionDao.java</url>
+          <line>160</line>
           <properties />
-          <option name="timeStamp" value="14" />
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1090,24 +1143,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Interfaces/GenericDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/JSONQuestionDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="110" lean-forward="false" selection-start-line="35" selection-start-column="110" selection-end-line="35" selection-end-column="110" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/JSONQuestionDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
@@ -1158,20 +1193,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="57" lean-forward="false" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#230#237#0" expanded="true" />
-            <element signature="method#toString#0;class#Test#0" expanded="false" />
-            <element signature="method#equals#0;class#Test#0" expanded="false" />
-            <element signature="method#hashCode#0;class#Test#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/Factories/MySqlDaoFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -1180,16 +1201,6 @@
             <element signature="e#1663#1664#0" expanded="false" />
             <element signature="e#1708#1709#0" expanded="false" />
             <element signature="method#getUserDAO#0;class#MySqlDaoFactory#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/QueryQuestionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="106" column="18" lean-forward="false" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1204,70 +1215,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/MySqlTestDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="42" column="121" lean-forward="false" selection-start-line="42" selection-start-column="121" selection-end-line="42" selection-end-column="121" />
-          <folding>
-            <element signature="method#getAll#0;class#MySqlTestDAO#0" expanded="false" />
-            <element signature="e#1763#1769#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/MySqlQuestionDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="976">
-          <caret line="76" column="57" lean-forward="false" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getByPK#0;class#MySqlQuestionDao#0" expanded="false" />
-            <element signature="method#update#0;class#MySqlQuestionDao#0" expanded="false" />
-            <element signature="method#delete#0;class#MySqlQuestionDao#0" expanded="false" />
-            <element signature="method#getAll#0;class#MySqlQuestionDao#0" expanded="false" />
-            <element signature="method#getRandom#0;class#MySqlQuestionDao#0" expanded="false" />
-            <element signature="method#getQuestionByTheme#0;class#MySqlQuestionDao#0" expanded="false" />
-            <element signature="method#fillMapWithTheme#0;class#MySqlQuestionDao#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/MySQLThemeDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="61" column="57" lean-forward="false" selection-start-line="61" selection-start-column="57" selection-end-line="61" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#create#0;class#MySQLThemeDAO#0" expanded="false" />
-            <element signature="method#getByPK#0;class#MySQLThemeDAO#0" expanded="false" />
-            <element signature="method#update#0;class#MySQLThemeDAO#0" expanded="false" />
-            <element signature="method#delete#0;class#MySQLThemeDAO#0" expanded="false" />
-            <element signature="method#getAll#0;class#MySQLThemeDAO#0" expanded="false" />
-            <element signature="e#1955#1962#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateQuestionServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1428">
           <caret line="105" column="43" lean-forward="false" selection-start-line="105" selection-start-column="43" selection-end-line="105" selection-end-column="43" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="122" column="30" lean-forward="true" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
-          <folding>
-            <element signature="class#Answer#0;class#Question#0" expanded="false" />
-            <element signature="method#Answer#0;class#Answer#0;class#Question#0" expanded="false" />
-            <element signature="method#toString#0;class#Answer#0;class#Question#0" expanded="false" />
-            <element signature="method#Question#0;class#Question#0" expanded="false" />
-            <element signature="method#setStringOfImageForQuestion#0;class#Question#0" expanded="false" />
-            <element signature="method#addAnswer#2;class#Question#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1303,19 +1255,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/QueryThemeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/addField.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-781">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1331,20 +1281,117 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/add_question.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="595">
+          <caret line="35" column="29" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#input#0;n#label#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#2865#2871#0" expanded="true" />
+            <element signature="e#2846#2852#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/MySqlTestDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="method#getAll#0;class#MySqlTestDAO#0" expanded="false" />
+            <element signature="e#1763#1769#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Interfaces/GenericDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="122" column="30" lean-forward="true" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
+          <folding>
+            <element signature="class#Answer#0;class#Question#0" expanded="false" />
+            <element signature="method#Answer#0;class#Answer#0;class#Question#0" expanded="false" />
+            <element signature="method#toString#0;class#Answer#0;class#Question#0" expanded="false" />
+            <element signature="method#Question#0;class#Question#0" expanded="false" />
+            <element signature="method#setStringOfImageForQuestion#0;class#Question#0" expanded="false" />
+            <element signature="method#addAnswer#2;class#Question#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/QueryQuestionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="95" column="38" lean-forward="false" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/MySqlQuestionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="43" column="57" lean-forward="false" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getByPK#0;class#MySqlQuestionDao#0" expanded="false" />
+            <element signature="method#update#0;class#MySqlQuestionDao#0" expanded="false" />
+            <element signature="method#delete#0;class#MySqlQuestionDao#0" expanded="false" />
+            <element signature="method#getAll#0;class#MySqlQuestionDao#0" expanded="false" />
+            <element signature="method#getRandom#0;class#MySqlQuestionDao#0" expanded="false" />
+            <element signature="e#5902#5912#0" expanded="true" />
+            <element signature="method#getQuestionByTheme#0;class#MySqlQuestionDao#0" expanded="false" />
+            <element signature="method#fillMapWithTheme#0;class#MySqlQuestionDao#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/MySQLThemeDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+          <folding>
+            <element signature="method#getByPK#0;class#MySQLThemeDAO#0" expanded="false" />
+            <element signature="method#update#0;class#MySQLThemeDAO#0" expanded="false" />
+            <element signature="method#delete#0;class#MySQLThemeDAO#0" expanded="false" />
+            <element signature="method#getAll#0;class#MySQLThemeDAO#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/JSONQuestionDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/QueryThemeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#230#237#0" expanded="true" />
+            <element signature="method#toString#0;class#Test#0" expanded="false" />
+            <element signature="method#equals#0;class#Test#0" expanded="false" />
+            <element signature="method#hashCode#0;class#Test#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

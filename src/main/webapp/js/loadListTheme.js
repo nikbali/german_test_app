@@ -2,12 +2,13 @@ var xhr = new XMLHttpRequest();
 var object_test;
 var thematics = [];
 butAdd = document.getElementById('btn_theme');
+//butAdd.addEventListener('click', loadListTheme, false);
 
 function loadListTheme(){
 try
 {
    
-      var url = "/querytheme?test_id=1";
+      var url = "/querytheme?test_id=1"; 
       xhr.open('GET', url);
      xhr.onload = function (e) 
 	 {
@@ -36,6 +37,6 @@ try
 catch(e)
 {
     alert('Error load list thematics'); 
-    document.location.href ='index.html';
+    document.location.href ='/index.html';
 }
 }

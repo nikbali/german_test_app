@@ -74,7 +74,7 @@ public class QueryQuestionController extends HttpServlet {
             }
 
             //поиск вопросов только по параметру rand
-            else if (id_param == null && rand_param != null && theme ==null)
+            else if (id_param == null && rand_param != null && theme == null)
             {
                 int rand = Integer.parseInt(rand_param);
                 List<Question> questions = question_dao.getRandom(rand);

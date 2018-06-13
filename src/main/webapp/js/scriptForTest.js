@@ -12,7 +12,7 @@ function loadData(){
 try
 {
    
-      var url = "http://nikbali.ru/queryquestion?rand=20"; //плюс тристо это просто ход чтоб данные были не кривми
+      var url = "/queryquestion?rand=20"; //плюс тристо это просто ход чтоб данные были не кривми
       xhr.open('GET', url, false);
       xhr.send();
       if (xhr.status == 200)
@@ -24,7 +24,7 @@ try
 catch(e)
 {
     alert('Ошибка загрузки данных из интеренета'); 
-    document.location.href ='main.html';
+    document.location.href ='/index.html';
 }
 }
 function Engine(question, answer) {yourAns[question]=answer;}
@@ -69,7 +69,7 @@ function Score(){
    alert(answerText);
    yourAns = [];
    score = 0;
-   document.location.href ='main.html';
+   document.location.href ='/index.html';
 }
 
 
