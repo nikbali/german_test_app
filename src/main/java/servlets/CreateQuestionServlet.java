@@ -4,12 +4,12 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import dao.GenericDAO;
+import dao.Interfaces.GenericDAO;
 import dao.JsonUser;
-import dao.MySqlDaoFactory;
+import dao.Factories.MySqlDaoFactory;
+import dao.MySQLThemeDAO;
+import model.*;
 import model.Error;
-import model.Question;
-import model.User;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -34,8 +34,10 @@ public class CreateQuestionServlet extends HttpServlet {
 
 @Override
 protected void doPost(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws ServletException, IOException {
+
     //cоздали объект вопроса и сетим ему поля
-    Question current_question = new Question("", "");
+    Question current_question = new Question("", "", "");
+    //текст вопроса
     current_question.setTextOfQuestion(httpServletRequest.getParameter("text_question"));
     Part filePart = httpServletRequest.getPart("upload");
     String fileName = getSubmittedFileName(filePart);
@@ -93,6 +95,15 @@ protected void doPost(HttpServletRequest httpServletRequest, HttpServletResponse
     {
         MySqlDaoFactory dao = MySqlDaoFactory.getInstance();
         GenericDAO<Question> question_dao = dao.getQuestionDAO();
+        GenericDAO<Theme> theme_dao = dao.getThemeDAO();
+
+        //создаем тематаику вопроса из параметра theme_id
+        String id_theme = httpServletRequest.getParameter("theme_id");
+        Theme theme = theme_dao.getByPK(Integer.parseInt(id_theme));
+        //сеттим тематику к вопросу
+        current_question.setThema(theme.getName());
+
+        /////СОЗДАНИЕ ВОПРОСА//////////////
         question_dao.create(current_question);
         httpServletResponse.getWriter().write("<p> Success! Created question!</p>" +
                 current_question.toString() + "<br>" + fullSavePath);

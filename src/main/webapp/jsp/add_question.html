@@ -1,0 +1,101 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add Question</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/style/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/style/jumbotron-narrow.css" rel="stylesheet">
+
+ </head>
+ <body>
+ 
+  
+       
+       <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" ><a href="/index.html">Main</a></li>
+            <li role="presentation"><a href="https://www.tupa-germania.ru/grazhdanstvo/test-na-grazhdanstvo-germanii.html">About</a></li>
+            <li role="presentation" class="active"><a href="add_question.html">Add Question</a></li>
+            <li role="presentation"><a href="#">Update</a></li>
+            <li role="presentation"><a href="#">Create Test</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Testing App</h3>
+      </div>
+       
+    <div class="page-header">
+        <h3>Add Question</h3>
+
+    </div>
+        
+        <p class="lead">
+            
+             <form id= "createQuestionForm" action="/create" method="post" enctype="multipart/form-data">
+             <p>
+            
+             <div class="form-group">
+                <label for="text_question">Text question:</label>
+                <textarea class="form-control" rows="5" name="text_question" id="text_question"></textarea>
+            </div>
+
+           
+              </p>
+              <p>
+                
+            <div class="btn-group">
+				  <button id="btn_theme" onclick="loadListTheme()" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Select theme:  <span class="caret">
+				  </span></button>
+				  <ul class="dropdown-menu pull-left" id="list_theme">
+					
+				  </ul>
+			</div>
+			
+               <label class="btn btn-default" for="upload">
+                 <input id="upload" type="file" style="display:none" 
+                     onchange="$('#upload-file-info').html(this.files[0].name)">
+                     Upload Image
+                </label>
+                <span class='label label-info' id="upload-file-info"></span>
+            </p>
+
+        <div class="page-header">
+            <h4>Answers</h4>
+        </div>
+
+        <div class="row" id = "answers">      
+        </div>
+   
+    <input type="button" class="btn btn-default" id="addfields" value="Add answer" />
+    <input type="submit" class="btn btn-success" value="Create">   
+    </form>
+            
+        </p>
+     
+       <div id="footer">&copy; nibali</div>
+  </div> 
+       
+ <!-- JAVASCRIPT -->
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap-dropdown.js"></script>
+<script type="text/javascript" src="/js/addField.js" ></script>
+<script type="text/javascript" src="/js/loadListTheme.js" ></script>
+
+ </body>
+</html>
+
+
+
+
+
+
+
+

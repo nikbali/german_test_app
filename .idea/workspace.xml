@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9043704-3e4c-4ae9-b56a-f8e5216a4f67" name="Default" comment="Поправил конфиг в web.xml, теперь проблемы с доступом к файлам нет">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mywebproject.iml" afterPath="$PROJECT_DIR$/mywebproject.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-    </list>
+    <list default="true" id="b9043704-3e4c-4ae9-b56a-f8e5216a4f67" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +17,91 @@
     </SUITE>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="QueryQuestionController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/QueryQuestionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1343">
+              <caret line="95" column="38" lean-forward="false" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JSONQuestionDaoTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/test/JSONQuestionDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MySqlQuestionDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/MySqlQuestionDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="43" column="57" lean-forward="false" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getByPK#0;class#MySqlQuestionDao#0" expanded="false" />
+                <element signature="method#update#0;class#MySqlQuestionDao#0" expanded="false" />
+                <element signature="method#delete#0;class#MySqlQuestionDao#0" expanded="false" />
+                <element signature="method#getAll#0;class#MySqlQuestionDao#0" expanded="false" />
+                <element signature="method#getRandom#0;class#MySqlQuestionDao#0" expanded="false" />
+                <element signature="e#5902#5912#0" expanded="true" />
+                <element signature="method#getQuestionByTheme#0;class#MySqlQuestionDao#0" expanded="false" />
+                <element signature="method#fillMapWithTheme#0;class#MySqlQuestionDao#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MySQLThemeDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/MySQLThemeDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+              <folding>
+                <element signature="method#getByPK#0;class#MySQLThemeDAO#0" expanded="false" />
+                <element signature="method#update#0;class#MySQLThemeDAO#0" expanded="false" />
+                <element signature="method#delete#0;class#MySQLThemeDAO#0" expanded="false" />
+                <element signature="method#getAll#0;class#MySQLThemeDAO#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#230#237#0" expanded="true" />
+                <element signature="method#toString#0;class#Test#0" expanded="false" />
+                <element signature="method#equals#0;class#Test#0" expanded="false" />
+                <element signature="method#hashCode#0;class#Test#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryThemeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/QueryThemeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,9 +115,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master_remote" />
+      </map>
+    </option>
     <push-targets>
       <push-target-info target-remote="github" target-branch="master" repo="$PROJECT_DIR$" source="master" />
       <push-target-info target-remote="origin" target-branch="master_remote" repo="$PROJECT_DIR$" source="master_remote" />
+      <push-target-info target-remote="github" target-branch="dev" repo="$PROJECT_DIR$" source="dev" />
     </push-targets>
   </component>
   <component name="GradleLocalSettings">
@@ -48,27 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/FirstServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/MyController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/MyJsp.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resurces/users.txt" />
-        <option value="$PROJECT_DIR$/src/main/resurces/users.json" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/success_login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/succes_registration.jsp" />
-        <option value="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-        <option value="$PROJECT_DIR$/target/mywebproject/WEB-INF/web.xml" />
-        <option value="C:/Program Files/Apache Software Foundation/Tomcat 9.0/webapps/mywebproject/WEB-INF/classes/servlets/FirstServlet.class" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/RegistrationController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/JsonUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/QuestionDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/QuestionDaoImplements.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/DBConnect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/MySqlQuestionDaoTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/model/Answer.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/DAOFactory.java" />
@@ -78,14 +143,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/js/addField.js" />
         <option value="$PROJECT_DIR$/src/main/java/dao/JSONQuestionDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/JSONDaoFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/JSONQuestionDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/create.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/test_process.jsp" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Question.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/CreateQuestionServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test/JSONQuestionDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Constant/SQLConstant.java" />
         <option value="$PROJECT_DIR$/src/main/java/Constant/Type.java" />
         <option value="$PROJECT_DIR$/src/main/java/Constant/Constant.java" />
@@ -93,12 +153,38 @@
         <option value="$PROJECT_DIR$/src/main/java/dao/GenericDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/Constant/TypeQueryQuestion.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/MySqlDaoFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test/MySqlQuestionDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/MySqlQuestionDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/QueryQuestionController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/my.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/GetImage.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/Interfaces/GenericDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/Interfaces/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/Interfaces/DAOFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/JsonUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/JSONQuestionDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/Factories/JSONDaoFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Behavior/Create.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test/MySQLTestDaoTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/Factories/MySqlDaoFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Question.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test/JSONQuestionDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Behavior/SearchByName.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Behavior/QueryTheme.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Behavior/Query.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/MySqlQuestionDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test/MySqlQuestionDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/QueryThemeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/MySqlTestDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Theme.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/MySQLThemeDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/CreateQuestionServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/main.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/main.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/loadListTheme.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/add_question.html" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/QueryQuestionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Test.java" />
       </list>
     </option>
   </component>
@@ -171,7 +257,48 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Behavior" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mywebproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mywebproject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mywebproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mywebproject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="Factories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mywebproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mywebproject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mywebproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mywebproject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="servlets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mywebproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mywebproject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mywebproject" type="b2602c69:ProjectViewProjectNode" />
@@ -180,13 +307,21 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="mywebproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mywebproject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -197,6 +332,7 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/dao" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -228,7 +364,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.Tomcat">
+  <component name="RunManager" selected="JUnit.JSONQuestionDaoTest.createQuestionFromJson">
     <configuration name="JSONQuestionDaoTest.createQuestionFromJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -254,7 +390,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="JSONQuestionDaoTest.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JSONQuestionDaoTest.createSingleQuestion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="test.*" />
@@ -266,6 +402,31 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.JSONQuestionDaoTest" />
+      <option name="METHOD_NAME" value="createSingleQuestion" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="MySqlQuestionDaoTest.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="mywebproject" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MySqlQuestionDaoTest" />
       <option name="METHOD_NAME" value="getAll" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -279,7 +440,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="MySqlQuestionDaoTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MySqlQuestionDaoTest.getQuestionByTheme" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="test.*" />
@@ -291,32 +452,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.MySqlQuestionDaoTest" />
-      <option name="METHOD_NAME" value="create" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="MySqlQuestionDaoTest.getByPK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="mywebproject" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.MySqlQuestionDaoTest" />
-      <option name="METHOD_NAME" value="getByPK" />
+      <option name="METHOD_NAME" value="getQuestionByTheme" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -463,19 +599,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Maven.Tomcat" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.getByPK" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.create" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.JSONQuestionDaoTest.getAll" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.getRandom" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.JSONQuestionDaoTest.createQuestionFromJson" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.getAll" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.getRandom" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.JSONQuestionDaoTest.createSingleQuestion" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.JSONQuestionDaoTest.createQuestionFromJson" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.getQuestionByTheme" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.JSONQuestionDaoTest.createQuestionFromJson" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.getRandom" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.JSONQuestionDaoTest.getAll" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.create" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.getByPK" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.getQuestionByTheme" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.JSONQuestionDaoTest.createSingleQuestion" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.getRandom" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MySqlQuestionDaoTest.getAll" />
       </list>
     </recent_temporary>
   </component>
@@ -588,39 +724,116 @@
       <option name="project" value="LOCAL" />
       <updated>1528033639372</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Поправил конфиг в web.xml, теперь проблемы с доступом к файлам нет">
+      <created>1528069395582</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1528069395582</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Refactoring code, add new entity Test and add for her DAO">
+      <created>1528800367859</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1528800367859</updated>
+    </task>
+    <task id="LOCAL-00017" summary="getAll для Тематик и Тестов + в Question добавлена Тематика">
+      <created>1528818254286</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1528818254286</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Changed Create Question considering Theme">
+      <created>1528824227421</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1528824227421</updated>
+    </task>
+    <task id="LOCAL-00019" summary="methods for Query By Thematic Name">
+      <created>1528828745743</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1528828745743</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add to Servlet logics for new type Query">
+      <created>1528829821538</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1528829821538</updated>
+    </task>
+    <task id="LOCAL-00021" summary="create get list theme by test id">
+      <created>1528833731331</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1528833731331</updated>
+    </task>
+    <task id="LOCAL-00022" summary="делаем фронт">
+      <created>1528847720415</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1528847720415</updated>
+    </task>
+    <task id="LOCAL-00023" summary="js для загрузки списка тематик и создания панелей с ответами">
+      <created>1528888789660</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1528888789661</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Work version for remote server">
+      <created>1528896061951</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1528896061951</updated>
+    </task>
+    <task id="LOCAL-00025" summary="+ script">
+      <created>1528896288444</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1528896288444</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JSONQuestionDaoTest_createQuestionFromJson - 2018.06.03 at 16h 42m 14s.xml">
+    <history-entry file="JSONQuestionDaoTest_createQuestionFromJson - 2018.06.12 at 19h 45m 02s.xml">
       <configuration name="JSONQuestionDaoTest.createQuestionFromJson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JSONQuestionDaoTest_createQuestionFromJson - 2018.06.03 at 23h 51m 51s.xml">
+    <history-entry file="JSONQuestionDaoTest_createQuestionFromJson - 2018.06.12 at 19h 46m 15s.xml">
       <configuration name="JSONQuestionDaoTest.createQuestionFromJson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JSONQuestionDaoTest_getAll - 2018.06.01 at 15h 27m 00s.xml">
-      <configuration name="JSONQuestionDaoTest.getAll" configurationId="JUnit" />
+    <history-entry file="JSONQuestionDaoTest_createQuestionFromJson - 2018.06.12 at 20h 08m 42s.xml">
+      <configuration name="JSONQuestionDaoTest.createQuestionFromJson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JSONQuestionDaoTest_getAll - 2018.06.01 at 15h 42m 04s.xml">
-      <configuration name="JSONQuestionDaoTest.getAll" configurationId="JUnit" />
+    <history-entry file="JSONQuestionDaoTest_createQuestionFromJson - 2018.06.13 at 15h 32m 32s.xml">
+      <configuration name="JSONQuestionDaoTest.createQuestionFromJson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JSONQuestionDaoTest_getAll - 2018.06.01 at 15h 43m 55s.xml">
-      <configuration name="JSONQuestionDaoTest.getAll" configurationId="JUnit" />
+    <history-entry file="JSONQuestionDaoTest_createSingleQuestion - 2018.06.12 at 19h 44m 00s.xml">
+      <configuration name="JSONQuestionDaoTest.createSingleQuestion" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JSONQuestionDaoTest_getAll - 2018.06.01 at 15h 46m 37s.xml">
-      <configuration name="JSONQuestionDaoTest.getAll" configurationId="JUnit" />
+    <history-entry file="JSONQuestionDaoTest_createSingleQuestion - 2018.06.12 at 19h 44m 55s.xml">
+      <configuration name="JSONQuestionDaoTest.createSingleQuestion" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JSONQuestionDaoTest_getAll - 2018.06.01 at 21h 55m 11s.xml">
-      <configuration name="JSONQuestionDaoTest.getAll" configurationId="JUnit" />
+    <history-entry file="MySqlQuestionDaoTest_getQuestionByTheme - 2018.06.12 at 21h 16m 14s.xml">
+      <configuration name="MySqlQuestionDaoTest.getQuestionByTheme" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JSONQuestionDaoTest_getAll - 2018.06.03 at 12h 58m 21s.xml">
-      <configuration name="JSONQuestionDaoTest.getAll" configurationId="JUnit" />
+    <history-entry file="MySqlQuestionDaoTest_getQuestionByTheme - 2018.06.12 at 21h 28m 26s.xml">
+      <configuration name="MySqlQuestionDaoTest.getQuestionByTheme" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JSONQuestionDaoTest_getAll - 2018.06.03 at 13h 53m 05s.xml">
-      <configuration name="JSONQuestionDaoTest.getAll" configurationId="JUnit" />
+    <history-entry file="MySqlQuestionDaoTest_getQuestionByTheme - 2018.06.12 at 21h 30m 13s.xml">
+      <configuration name="MySqlQuestionDaoTest.getQuestionByTheme" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MySqlQuestionDaoTest_getRandom - 2018.06.03 at 15h 30m 06s.xml">
-      <configuration name="MySqlQuestionDaoTest.getRandom" configurationId="JUnit" />
+    <history-entry file="MySqlQuestionDaoTest_getQuestionByTheme - 2018.06.12 at 21h 31m 00s.xml">
+      <configuration name="MySqlQuestionDaoTest.getQuestionByTheme" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -637,31 +850,31 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3946958" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44929796" sideWeight="0.4935275" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.4935275" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.74414974" sideWeight="0.512945" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24757281" sideWeight="0.48947367" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.085803434" sideWeight="0.49029127" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2730109" sideWeight="0.487055" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33009708" sideWeight="0.48947367" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.57722306" sideWeight="0.49029127" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5709828" sideWeight="0.487055" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20631067" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25161812" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2277691" sideWeight="0.49676377" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46957877" sideWeight="0.49676377" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12864077" sideWeight="0.5105263" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -708,6 +921,17 @@
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
               </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="COLUMN_ORDER">
                 <list>
                   <option value="0" />
@@ -741,184 +965,37 @@
     <MESSAGE value="сделал добавление вопросов методом POST(включая загрузку изображений на сервер)" />
     <MESSAGE value="Сделал чтобы по запросу query возвращать список из N случайных вопросов, метод getRandom(N)" />
     <MESSAGE value="Поправил конфиг в web.xml, теперь проблемы с доступом к файлам нет" />
-    <option name="LAST_COMMIT_MESSAGE" value="Поправил конфиг в web.xml, теперь проблемы с доступом к файлам нет" />
+    <MESSAGE value="Refactoring code, add new entity Test and add for her DAO" />
+    <MESSAGE value="getAll для Тематик и Тестов + в Question добавлена Тематика" />
+    <MESSAGE value="Changed Create Question considering Theme" />
+    <MESSAGE value="methods for Query By Thematic Name" />
+    <MESSAGE value="add to Servlet logics for new type Query" />
+    <MESSAGE value="create get list theme by test id" />
+    <MESSAGE value="делаем фронт" />
+    <MESSAGE value="js для загрузки списка тематик и создания панелей с ответами" />
+    <MESSAGE value="Work version for remote server" />
+    <MESSAGE value="+ script" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ script" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dao/MySqlQuestionDao.java</url>
+          <line>160</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/resurces/users.json" />
-    <entry file="file://$PROJECT_DIR$/target/mywebproject/WEB-INF/classes/model/User.class" />
-    <entry file="file://$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-    <entry file="file://$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/users.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Apache Software Foundation/Tomcat 9.0/webapps/mywebproject/WEB-INF/classes/servlets/FirstServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/mywebproject/WEB-INF/web.xml" />
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/6.0/javaee-api-6.0.jar!/javax/servlet/ServletContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/6.0/javaee-api-6.0.jar!/javax/servlet/http/HttpServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/AnswerDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/DBConnect.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Answer.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.4/gson-2.8.4.jar!/com/google/gson/JsonElement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Error.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-          <folding>
-            <element signature="e#358#359#0" expanded="false" />
-            <element signature="e#395#396#0" expanded="false" />
-            <element signature="e#465#466#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/createQuestion.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/addField.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Loaders/Loader.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#1222#1223#0" expanded="false" />
-            <element signature="e#1262#1263#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/JSONDaoFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#314#315#0" expanded="false" />
-            <element signature="e#341#342#0" expanded="false" />
-            <element signature="e#390#391#0" expanded="false" />
-            <element signature="e#417#418#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/JsonUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-          <folding>
-            <element signature="method#addUser#0;class#JsonUser#0" expanded="false" />
-            <element signature="method#checkUser#0;class#JsonUser#0" expanded="false" />
-            <element signature="method#login#0;class#JsonUser#0" expanded="false" />
-            <element signature="method#getUser#0;class#JsonUser#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/scriptForTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/test_process.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="16" column="53" lean-forward="false" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/succes_registration.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/success_login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -934,7 +1011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="386" column="59" lean-forward="false" selection-start-line="386" selection-start-column="59" selection-end-line="386" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -942,7 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -950,20 +1025,316 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="188" column="27" lean-forward="false" selection-start-line="188" selection-start-column="27" selection-end-line="188" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Constant/Type.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/DAOFactory.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/GenericDAO.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Constant/TypeQueryQuestion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="76" lean-forward="false" selection-start-line="3" selection-start-column="76" selection-end-line="3" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/MySqlDaoFactory.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/my.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/GetImage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Interfaces/DAOFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="45" lean-forward="true" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Interfaces/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/JsonUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1768">
+          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding>
-            <element signature="e#2748#2749#0" expanded="false" />
-            <element signature="e#2780#2781#0" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Factories/JSONDaoFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Behavior/Create.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="35" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="13" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.11/mysql-connector-java-8.0.11.jar!/com/mysql/cj/jdbc/result/ResultSetImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="1776" column="0" lean-forward="false" selection-start-line="1776" selection-start-column="0" selection-end-line="1776" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="240" column="0" lean-forward="false" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
+          <folding>
+            <element signature="e#2111#2112#0" expanded="true" />
+            <element signature="e#2155#2156#0" expanded="true" />
+            <element signature="e#5951#6086#0" expanded="true" />
+            <element signature="e#6085#6086#0" expanded="true" />
+            <element signature="e#6484#6648#0" expanded="true" />
+            <element signature="e#6647#6648#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/MySQLTestDaoTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#getTests#0;class#MySQLTestDaoTests#0" expanded="false" />
+            <element signature="method#getTematics#0;class#MySQLTestDaoTests#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/JSONQuestionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="15" column="44" lean-forward="false" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Behavior/QueryTheme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#349#364#0" expanded="false" />
+            <element signature="e#413#414#0" expanded="false" />
+            <element signature="e#457#458#0" expanded="false" />
+            <element signature="e#607#608#0" expanded="false" />
+            <element signature="e#634#635#0" expanded="false" />
+            <element signature="e#696#697#0" expanded="false" />
+            <element signature="e#723#724#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Behavior/Query.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/MySqlQuestionDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="72" column="4" lean-forward="false" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#create#0;class#MySqlQuestionDaoTest#0" expanded="false" />
+            <element signature="method#delete#0;class#MySqlQuestionDaoTest#0" expanded="false" />
+            <element signature="method#getByPK#0;class#MySqlQuestionDaoTest#0" expanded="false" />
+            <element signature="method#getRandom#0;class#MySqlQuestionDaoTest#0" expanded="false" />
+            <element signature="method#getQuestionByTheme#0;class#MySqlQuestionDaoTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Factories/MySqlDaoFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="56" column="31" lean-forward="false" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="31" />
+          <folding>
+            <element signature="e#1663#1664#0" expanded="false" />
+            <element signature="e#1708#1709#0" expanded="false" />
+            <element signature="method#getUserDAO#0;class#MySqlDaoFactory#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Theme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="58" column="32" lean-forward="false" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+          <folding>
+            <element signature="method#hashCode#0;class#Theme#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateQuestionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="105" column="43" lean-forward="false" selection-start-line="105" selection-start-column="43" selection-end-line="105" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/create.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/addField.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-781">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/loadListTheme.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="34" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/add_question.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="29" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#label#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2846#2852#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/MySqlTestDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="method#getAll#0;class#MySqlTestDAO#0" expanded="false" />
+            <element signature="e#1763#1769#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Interfaces/GenericDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Question.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="89" column="21" lean-forward="false" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
+        <state relative-caret-position="582">
+          <caret line="122" column="30" lean-forward="true" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#250#258#0" expanded="true" />
             <element signature="class#Answer#0;class#Question#0" expanded="false" />
             <element signature="method#Answer#0;class#Answer#0;class#Question#0" expanded="false" />
             <element signature="method#toString#0;class#Answer#0;class#Question#0" expanded="false" />
@@ -974,172 +1345,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/JSONQuestionDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/QueryQuestionController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="method#getInstance#0;class#JSONQuestionDao#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Constant/Type.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="66" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/DAOFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/GenericDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Constant/TypeQueryQuestion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="76" lean-forward="false" selection-start-line="3" selection-start-column="76" selection-end-line="3" selection-end-column="76" />
+        <state relative-caret-position="1343">
+          <caret line="95" column="38" lean-forward="false" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/MySqlQuestionDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="123" column="4" lean-forward="false" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="4" />
+        <state relative-caret-position="367">
+          <caret line="43" column="57" lean-forward="false" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#create#0;class#MySqlQuestionDao#0" expanded="false" />
             <element signature="method#getByPK#0;class#MySqlQuestionDao#0" expanded="false" />
             <element signature="method#update#0;class#MySqlQuestionDao#0" expanded="false" />
             <element signature="method#delete#0;class#MySqlQuestionDao#0" expanded="false" />
             <element signature="method#getAll#0;class#MySqlQuestionDao#0" expanded="false" />
-            <element signature="e#3588#3598#0" expanded="true" />
             <element signature="method#getRandom#0;class#MySqlQuestionDao#0" expanded="false" />
-            <element signature="e#4853#4863#0" expanded="true" />
+            <element signature="e#5902#5912#0" expanded="true" />
+            <element signature="method#getQuestionByTheme#0;class#MySqlQuestionDao#0" expanded="false" />
+            <element signature="method#fillMapWithTheme#0;class#MySqlQuestionDao#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/MySqlDaoFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/MySQLThemeDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="42" column="27" lean-forward="false" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+        <state relative-caret-position="204">
+          <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
           <folding>
-            <element signature="method#getConnection#0;class#MySqlDaoFactory#0" expanded="false" />
-            <element signature="method#getUserDAO#0;class#MySqlDaoFactory#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/MySqlQuestionDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="60" column="4" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#gen#0;class#MySqlQuestionDaoTest#0" expanded="false" />
-            <element signature="method#delete#0;class#MySqlQuestionDaoTest#0" expanded="false" />
-            <element signature="method#getByPK#0;class#MySqlQuestionDaoTest#0" expanded="false" />
-            <element signature="method#getRandom#0;class#MySqlQuestionDaoTest#0" expanded="false" />
+            <element signature="method#getByPK#0;class#MySQLThemeDAO#0" expanded="false" />
+            <element signature="method#update#0;class#MySQLThemeDAO#0" expanded="false" />
+            <element signature="method#delete#0;class#MySQLThemeDAO#0" expanded="false" />
+            <element signature="method#getAll#0;class#MySQLThemeDAO#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/test/JSONQuestionDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/QueryQuestionController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/QueryThemeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-275">
-          <caret line="50" column="47" lean-forward="false" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/my.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/GetImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="17" column="51" lean-forward="false" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/create.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateQuestionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="30" column="16" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+        <state relative-caret-position="38">
+          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#230#237#0" expanded="true" />
+            <element signature="method#toString#0;class#Test#0" expanded="false" />
+            <element signature="method#equals#0;class#Test#0" expanded="false" />
+            <element signature="method#hashCode#0;class#Test#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

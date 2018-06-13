@@ -1,12 +1,14 @@
 package test;
 
-import dao.GenericDAO;
-import dao.MySqlDaoFactory;
+import dao.Interfaces.GenericDAO;
+import dao.Factories.MySqlDaoFactory;
 import dao.MySqlQuestionDao;
 import model.Question;
+import model.Theme;
 import org.junit.*;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 
@@ -31,7 +33,7 @@ public class MySqlQuestionDaoTest {
     }
     @Test
     public void create() throws Exception {
-        Question test_question = new Question("Auf welcher Straße steht der Reichstag?", "Street.png" );
+        Question test_question = new Question("Auf welcher Straße steht der Reichstag?", "Street.png", "Default");
         test_question.addAnswer("Scheidemannstraße 2" , true);
         test_question.addAnswer("Monckebergstraße 33" , false);
         test_question.addAnswer("Karl Marx Straße 3" , false);
@@ -65,9 +67,21 @@ public class MySqlQuestionDaoTest {
           System.out.println(obj);
       }
     }
+
+    @Test
+    public void getQuestionByTheme() throws Exception
+    {
+        ArrayList<Question> questions = question_dao.getQuestionByTheme("General", 10);
+        for(Question obj : questions)
+        {
+            System.out.println(obj);
+        }
+    }
+
     @After
     public void rollBack() throws Exception {
        dao.getConnection().rollback();
     }
+
 
 }

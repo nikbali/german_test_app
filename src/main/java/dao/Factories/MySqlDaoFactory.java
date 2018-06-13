@@ -1,7 +1,15 @@
-package dao;
+package dao.Factories;
 
 
+import dao.Interfaces.DAOFactory;
+import dao.Interfaces.GenericDAO;
+import dao.MySQLThemeDAO;
+import dao.MySqlQuestionDao;
+import dao.Interfaces.UserDAO;
+import dao.MySqlTestDAO;
 import model.Question;
+import model.Test;
+import model.Theme;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -42,6 +50,16 @@ public class MySqlDaoFactory implements DAOFactory {
     @Override
     public MySqlQuestionDao getQuestionDAO() {
         return new MySqlQuestionDao(cons);
+    }
+
+    @Override
+    public GenericDAO<Test> getTestDAO() {
+        return new MySqlTestDAO(cons);
+    }
+
+    @Override
+    public GenericDAO<Theme> getThemeDAO() {
+        return new MySQLThemeDAO(cons);
     }
 
     @Override

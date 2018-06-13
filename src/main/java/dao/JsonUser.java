@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import dao.Interfaces.UserDAO;
 import model.User;
 
 import javax.servlet.ServletContext;
